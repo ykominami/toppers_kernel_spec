@@ -1,0 +1,7 @@
+:bookseries: animal
+include::front.asciidoc[]
+include::ch1.asciidoc[]
+include::ch2.asciidoc[]
+include::ch3.asciidoc[]
+include::ch4.asciidoc[]
+include::ch5.asciidoc[]
