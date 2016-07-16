@@ -10,13 +10,17 @@ TOPPERS統合仕様書をASCIIDOC形式でリライトした
 
 ## Usage
 
-    git checkout <kernel-version>
+    git checkout <branches>
     asciidoctor -b html book.asciidoc
+    asciidoctor-pdf -b pdf book.asciidoc
 
 ## Install
 
-    gem install asciidoctor
-    gem install asciidoctor-pdf
+    sudo gem install asciidoctor
+    sudo gem install asciidoctor-pdf
+    or
+    sudo gem install asciidoctor
+    sudo gem install asciidoctor-pdf-cjk
 
 ## Contribution
 
