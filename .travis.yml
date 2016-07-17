@@ -1,5 +1,9 @@
 sudo: required
 
+branches:
+  only:
+    - 1.7.1
+
 services:
   - docker
 
