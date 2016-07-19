@@ -24,6 +24,11 @@ TOPPERS統合仕様書をASCIIDOC形式でリライトした
 
 ## Contribution
 
+## Output(Github Pages)
+
+* [html](https://mitsut.github.io/toppers_kernel_spec/)
+* [pdf](https://mitsut.github.io/toppers_kernel_spec/book.pdf)
+
 ## Licence
 
 TOPPERS Licence (http://www.toppers.jp/license.html)
