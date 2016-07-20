@@ -1,6 +1,6 @@
 = TOPPERS新世代カーネル統合仕様書
 :toc-title: 目次
-:toc:
+:toc: left
 :toclevels: 4
 :website: http://www.toppers.jp/
 
