@@ -1,0 +1,4040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.4">
+<title>リファレンス</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Remove comment around @import statement below when using as a custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+body{-webkit-font-smoothing:antialiased}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.spread{width:100%}
+p.lead,.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{font-size:1.21875em;line-height:1.6}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #ddddd8;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol,ul.no-bullet,ol.no-bullet{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.no-bullet{list-style:none}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite:before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media only screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7;font-weight:bold}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+body{tab-size:4}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
+.clearfix:after,.float-group:after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menu{color:rgba(0,0,0,.8)}
+b.button:before,b.button:after{position:relative;top:-1px;font-weight:400}
+b.button:before{content:"[";padding:0 3px 0 2px}
+b.button:after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header:before,#header:after,#content:before,#content:after,#footnotes:before,#footnotes:after,#footer:before,#footer:after{content:" ";display:table}
+#header:after,#content:after,#footnotes:after,#footer:after{clear:both}
+#content{margin-top:1.25em}
+#content:before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #ddddd8}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #ddddd8;padding-bottom:8px}
+#header .details{border-bottom:1px solid #ddddd8;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span:before{content:"\00a0\2013\00a0"}
+#header .details br+span.author:before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark:before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber:after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #ddddd8;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #efefed;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media only screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+@media only screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+.sect1{padding-bottom:.625em}
+@media only screen and (min-width:768px){.sect1{padding-bottom:1.25em}}
+.sect1+.sect1{border-top:1px solid #efefed}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor:before,h2>a.anchor:before,h3>a.anchor:before,#toctitle>a.anchor:before,.sidebarblock>.content>.title>a.anchor:before,h4>a.anchor:before,h5>a.anchor:before,h6>a.anchor:before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock>caption.title{white-space:nowrap;overflow:visible;max-width:0}
+.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>.paragraph:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #ddddd8;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.8125em}
+.literalblock pre.nowrap,.literalblock pre[class].nowrap,.listingblock pre.nowrap,.listingblock pre[class].nowrap{overflow-x:auto;white-space:pre;word-wrap:normal}
+@media only screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media only screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]:before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]:before{display:block}
+.listingblock.terminal pre .command:before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt]):before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #ddddd8}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock blockquote p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote:before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.5em;margin-right:.5ex;text-align:right}
+.quoteblock .quoteblock{margin-left:0;margin-right:0;padding:.5em 0;border-left:3px solid rgba(0,0,0,.6)}
+.quoteblock .quoteblock blockquote{padding:0 0 0 .75em}
+.quoteblock .quoteblock blockquote:before{display:none}
+.verseblock{margin:0 1em 1.25em 1em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract{margin:0 0 1.25em 0;display:block}
+.quoteblock.abstract blockquote,.quoteblock.abstract blockquote p{text-align:left;word-spacing:0}
+.quoteblock.abstract blockquote:before,.quoteblock.abstract blockquote p:first-of-type:before{display:none}
+table.tableblock{max-width:100%;border-collapse:separate}
+table.tableblock td>.paragraph:last-child p>p:last-child,table.tableblock th>p:last-child,table.tableblock td>p:last-child{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all th.tableblock,table.grid-all td.tableblock{border-width:0 1px 1px 0}
+table.grid-all tfoot>tr>th.tableblock,table.grid-all tfoot>tr>td.tableblock{border-width:1px 1px 0 0}
+table.grid-cols th.tableblock,table.grid-cols td.tableblock{border-width:0 1px 0 0}
+table.grid-all *>tr>.tableblock:last-child,table.grid-cols *>tr>.tableblock:last-child{border-right-width:0}
+table.grid-rows th.tableblock,table.grid-rows td.tableblock{border-width:0 0 1px 0}
+table.grid-all tbody>tr:last-child>th.tableblock,table.grid-all tbody>tr:last-child>td.tableblock,table.grid-all thead:last-child>tr>th.tableblock,table.grid-rows tbody>tr:last-child>th.tableblock,table.grid-rows tbody>tr:last-child>td.tableblock,table.grid-rows thead:last-child>tr>th.tableblock{border-bottom-width:0}
+table.grid-rows tfoot>tr>th.tableblock,table.grid-rows tfoot>tr>td.tableblock{border-width:1px 0 0 0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot{border-width:1px 0}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.unstyled,ol.unnumbered,ul.checklist,ul.none{list-style-type:none}
+ul.unstyled,ol.unnumbered,ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1em;font-size:.85em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{width:1em;position:relative;top:1px}
+ul.inline{margin:0 auto .625em auto;margin-left:-1.375em;margin-right:0;padding:0;list-style:none;overflow:hidden}
+ul.inline>li{list-style:none;float:left;margin-left:1.375em;display:block}
+ul.inline>li>*{display:block}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist>table tr>td:first-of-type{padding:0 .75em;line-height:1}
+.colist>table tr>td:last-of-type{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left,.imageblock[style*="float: left"]{margin:.25em .625em 1.25em 0}
+.imageblock.right,.imageblock[style*="float: right"]{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em 0;border-width:1px 0 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;text-indent:-1.05em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note:before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip:before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning:before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution:before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important:before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]:after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@media print{@page{margin:1.25cm .75cm}
+*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare):after,a[href^="https:"]:not(.bare):after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]:after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #ddddd8!important;padding-bottom:0!important}
+.sect1{padding-bottom:0!important}
+.sect1+.sect1{border:0!important}
+#header>h1:first-child{margin-top:1.25rem}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em 0}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span:before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]:before{display:block}
+#footer{background:none!important;padding:0 .9375em}
+#footer-text{color:rgba(0,0,0,.6)!important;font-size:.9em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+</style>
+</head>
+<body class="article">
+<div id="header">
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_リファレンス">1. リファレンス</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_サービスコール一覧">1.1. サービスコール一覧</h3>
+<div class="paragraph">
+<p>(1) タスク管理機能</p>
+</div>
+<div class="paragraph">
+<p>ER_ID tskid = <a href="#API_CRE_TSK">acre_tsk</a>(const T_CTSK *pk_ctsk)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_TSK">sac_tsk</a>(ID tskid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_tsk">del_tsk</a>(ID tskid)										〔TD〕<br>
+ER ercd = <a href="#API_act_tsk">act_tsk</a>(ID tskid)										〔T〕<br>
+ER ercd = <a href="#API_act_tsk">iact_tsk</a>(ID tskid)									〔I〕<br>
+ER ercd = <a href="#API_mact_tsk">mact_tsk</a>(ID tskid, ID prcid)							〔TM〕<br>
+ER ercd = <a href="#API_mact_tsk">imact_tsk</a>(ID tskid, ID prcid)						〔IM〕<br>
+ER_UINT	actcnt = <a href="#API_can_act">can_act</a>(ID tskid)								〔T〕<br>
+ER ercd = <a href="#API_mig_tsk">mig_tsk</a>(ID tskid, ID prcid)							〔TM〕<br>
+ER ercd = <a href="#API_ext_tsk">ext_tsk</a>()												〔T〕<br>
+ER ercd = <a href="#API_ter_tsk">ter_tsk</a>(ID tskid)										〔T〕<br>
+ER ercd = <a href="#API_chg_pri">chg_pri</a>(ID tskid, PRI tskpri)							〔T〕<br>
+ER ercd = <a href="#API_get_pri">get_pri</a>(ID tskid, PRI *p_tskpri)						〔T〕<br>
+ER ercd = <a href="#API_get_inf">get_inf</a>(intptr_t *p_exinf)							〔T〕<br>
+ER ercd = <a href="#API_ref_tsk">ref_tsk</a>(ID tskid, T_RTSK *pk_rtsk)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>(2) タスク付属同期機能</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_slp_tsk">slp_tsk</a>()												〔T〕<br>
+ER ercd = <a href="#API_slp_tsk">tslp_tsk</a>(TMO tmout)									〔T〕<br>
+ER ercd = <a href="#API_wup_tsk">wup_tsk</a>(ID tskid)										〔T〕<br>
+ER ercd = <a href="#API_iwup_tsk">iwup_tsk</a>(ID tskid)									〔I〕<br>
+ER_UINT wupcnt = <a href="#API_can_wup">can_wup</a>(ID tskid)								〔T〕<br>
+ER ercd = <a href="#API_rel_wai">rel_wai</a>(ID tskid)										〔T〕<br>
+ER ercd = <a href="#API_irel_wai">irel_wai</a>(ID tskid)									〔I〕<br>
+ER ercd = <a href="#API_sus_tsk">sus_tsk</a>(ID tskid)										〔T〕<br>
+ER ercd = <a href="#API_rsm_tsk">rsm_tsk</a>(ID tskid)										〔T〕<br>
+ER ercd = <a href="#API_dis_wai">dis_wai</a>(ID tskid)										〔TP〕<br>
+ER ercd = <a href="#API_dis_wai">idis_wai</a>(ID tskid)									〔IP〕<br>
+ER ercd = <a href="#API_ena_wai">ena_wai</a>(ID tskid)										〔TP〕<br>
+ER ercd = <a href="#API_ena_wai">iena_wai</a>(ID tskid)									〔IP〕<br>
+ER ercd = <a href="#API_dly_tsk">dly_tsk</a>(RELTIM dlytim)								〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>(3) タスク例外処理機能</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_def_tex">def_tex</a>(ID tskid, const T_DTEX *pk_dtex)				〔TD〕<br>
+ER ercd = <a href="#API_ras_tex">ras_tex</a>(ID tskid, TEXPTN rasptn)						〔T〕<br>
+ER ercd = <a href="#API_ras_tex">iras_tex</a>(ID tskid, TEXPTN rasptn)						〔I〕<br>
+ER ercd = <a href="#API_dis_tex">dis_tex</a>()												〔T〕<br>
+ER ercd = <a href="#API_ena_tex">ena_tex</a>()												〔T〕<br>
+bool_t state = <a href="#API_sns_tex">sns_tex</a>()										〔TI〕<br>
+ER ercd = <a href="#API_ref_tex">ref_tex</a>(ID tskid, T_RTEX *pk_rtex)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>(4) 同期・通信機能</p>
+</div>
+<div class="paragraph">
+<p>セマフォ</p>
+</div>
+<div class="paragraph">
+<p>ER_ID semid = <a href="#API_CRE_SEM">acre_sem</a>(const T_CSEM *pk_csem)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_SEM">sac_sem</a>(ID semid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_sem">del_sem</a>(ID semid)										〔TD〕<br>
+ER ercd = <a href="#API_sig_sem">sig_sem</a>(ID semid)										〔T〕<br>
+ER ercd = <a href="#API_sig_sem">isig_sem</a>(ID semid)									〔I〕<br>
+ER ercd = <a href="#API_wai_sem">wai_sem</a>(ID semid)										〔T〕<br>
+ER ercd = <a href="#API_pol_sem">pol_sem</a>(ID semid)										〔T〕<br>
+ER ercd = <a href="#API_wai_sem">twai_sem</a>(ID semid, TMO tmout)							〔T〕<br>
+ER ercd = <a href="#API_ini_sem">ini_sem</a>(ID semid)										〔T〕<br>
+ER ercd = <a href="#API_ref_sem">ref_sem</a>(ID semid, T_RSEM *pk_rsem)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>イベントフラグ</p>
+</div>
+<div class="paragraph">
+<p>ER_ID flgid = <a href="#API_CRE_FLG">acre_flg</a>(const T_CFLG *pk_cflg)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_FLG">sac_flg</a>(ID flgid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_flg">del_flg</a>(ID flgid)										〔TD〕<br>
+ER ercd = <a href="#API_set_flg">set_flg</a>(ID flgid, FLGPTN setptn)						〔T〕<br>
+ER ercd = <a href="#API_set_flg">iset_flg</a>(ID flgid, FLGPTN setptn)						〔I〕<br>
+ER ercd = <a href="#API_clr_flg">clr_flg</a>(ID flgid, FLGPTN clrptn)						〔T〕<br>
+ER ercd = <a href="#API_wai_flg">wai_flg</a>(ID flgid, FLGPTN waiptn, MODE wfmode, FLGPTN *p_flgptn)						〔T〕<br>
+ER ercd = <a href="#API_pol_flg">pol_flg</a>(ID flgid, FLGPTN waiptn, MODE wfmode, FLGPTN *p_flgptn)						〔T〕<br>
+ER ercd = <a href="#API_wai_flg">twai_flg</a>(ID flgid, FLGPTN waiptn,	 MODE wfmode, FLGPTN *p_flgptn, TMO tmout)			〔T〕<br>
+ER ercd = <a href="#API_ini_flg">ini_flg</a>(ID flgid)										〔T〕<br>
+ER ercd = <a href="#API_ref_flg">ref_flg</a>(ID flgid, T_RFLG *pk_rflg)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>データキュー</p>
+</div>
+<div class="paragraph">
+<p>ER_ID dtqid = <a href="#API_CRE_DTQ">acre_dtq</a>(const T_CDTQ *pk_cdtq)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_DTQ">sac_dtq</a>(ID dtqid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_dtq">del_dtq</a>(ID dtqid)										〔TD〕<br>
+ER ercd = <a href="#API_snd_dtq">snd_dtq</a>(ID dtqid, intptr_t data)						〔T〕<br>
+ER ercd = <a href="#API_snd_dtq">psnd_dtq</a>(ID dtqid, intptr_t data)						〔T〕<br>
+ER ercd = <a href="#API_snd_dtq">ipsnd_dtq</a>(ID dtqid, intptr_t data)					〔I〕<br>
+ER ercd = <a href="#API_snd_dtq">tsnd_dtq</a>(ID dtqid, intptr_t data, TMO tmout)			〔T〕<br>
+ER ercd = <a href="#API_snd_dtq">fsnd_dtq</a>(ID dtqid, intptr_t data)						〔T〕<br>
+ER ercd = <a href="#API_snd_dtq">ifsnd_dtq</a>(ID dtqid, intptr_t data)					〔I〕<br>
+ER ercd = <a href="#API_rcv_dtq">rcv_dtq</a>(ID dtqid, intptr_t *p_data)					〔T〕<br>
+ER ercd = <a href="#API_rcv_dtq">prcv_dtq</a>(ID dtqid, intptr_t *p_data)					〔T〕<br>
+ER ercd = <a href="#API_rcv_dtq">trcv_dtq</a>(ID dtqid, intptr_t *p_data, TMO tmout)		〔T〕<br>
+ER ercd = <a href="#API_ini_dtq">ini_dtq</a>(ID dtqid)										〔T〕<br>
+ER ercd = <a href="#API_ref_dtq">ref_dtq</a>(ID dtqid, T_RDTQ *pk_rdtq)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>優先度データキュー</p>
+</div>
+<div class="paragraph">
+<p>ER_ID pdqid = <a href="#API_CRE_PDQ">acre_pdq</a>(const T_CPDQ *pk_cpdq)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_PDQ">sac_pdq</a>(ID pdqid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_pdq">del_pdq</a>(ID pdqid)										〔TD〕<br>
+ER ercd = <a href="#API_snd_pdq">snd_pdq</a>(ID pdqid, intptr_t data, PRI datapri)			〔T〕<br>
+ER ercd = <a href="#API_snd_pdq">psnd_pdq</a>(ID pdqid, intptr_t data, PRI datapri)		〔T〕<br>
+ER ercd = <a href="#API_snd_pdq">ipsnd_pdq</a>(ID pdqid, intptr_t data, PRI datapri)		〔I〕<br>
+ER ercd = <a href="#API_snd_pdq">tsnd_pdq</a>(ID pdqid, intptr_t data,	 PRI datapri, TMO tmout)					〔T〕<br>
+ER ercd = <a href="#API_rcv_pdq">rcv_pdq</a>(ID pdqid, intptr_t *p_data, PRI *p_datapri)	〔T〕<br>
+ER ercd = <a href="#API_rcv_pdq">prcv_pdq</a>(ID pdqid, intptr_t *p_data, PRI *p_datapri)	〔T〕<br>
+ER ercd = <a href="#API_rcv_pdq">trcv_pdq</a>(ID pdqid, intptr_t *p_data,	PRI *p_datapri, TMO tmout)				〔T〕<br>
+ER ercd = <a href="#API_ini_pdq">ini_pdq</a>(ID pdqid)										〔T〕<br>
+ER ercd = <a href="#API_ref_pdq">ref_pdq</a>(ID pdqid, T_RPDQ *pk_rpdq)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>メールボックス</p>
+</div>
+<div class="paragraph">
+<p>ER_ID mbxid = <a href="#API_CRE_MBX">acre_mbx</a>(const T_CMBX *pk_cmbx)					〔TDp〕<br>
+ER ercd = <a href="#API_del_mbx">del_mbx</a>(ID mbxid)										〔TDp〕<br>
+ER ercd = <a href="#API_snd_mbx">snd_mbx</a>(ID mbxid, T_MSG *pk_msg)						〔Tp〕<br>
+ER ercd = <a href="#API_rcv_mbx">rcv_mbx</a>(ID mbxid, T_MSG **ppk_msg)					〔Tp〕<br>
+ER ercd = <a href="#API_rcv_mbx">prcv_mbx</a>(ID mbxid, T_MSG **ppk_msg)					〔Tp〕<br>
+ER ercd = <a href="#API_rcv_mbx">trcv_mbx</a>(ID mbxid, T_MSG **ppk_msg, TMO tmout)		〔Tp〕<br>
+ER ercd = <a href="#API_ini_mbx">ini_mbx</a>(ID mbxid)										〔Tp〕<br>
+ER ercd = <a href="#API_ref_mbx">ref_mbx</a>(ID mbxid, T_RMBX *pk_rmbx)					〔Tp〕<br></p>
+</div>
+<div class="paragraph">
+<p>ミューテックス</p>
+</div>
+<div class="paragraph">
+<p>ER_ID mtxid = <a href="#API_CRE_MTX">acre_mtx</a>(const T_CMTX *pk_cmtx)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_MTX">sac_mtx</a>(ID mtxid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_mtx">del_mtx</a>(ID mtxid)										〔TD〕<br>
+ER ercd = <a href="#API_loc_mtx">loc_mtx</a>(ID mtxid)										〔T〕<br>
+ER ercd = <a href="#API_loc_mtx">ploc_mtx</a>(ID mtxid)									〔T〕<br>
+ER ercd = <a href="#API_loc_mtx">tloc_mtx</a>(ID mtxid, TMO tmout)							〔T〕<br>
+ER ercd = <a href="#API_unl_mtx">unl_mtx</a>(ID mtxid)										〔T〕<br>
+ER ercd = <a href="#API_ini_mtx">ini_mtx</a>(ID mtxid)										〔T〕<br>
+ER ercd = <a href="#API_ref_mtx">ref_mtx</a>(ID mtxid, T_RMTX *pk_rmtx)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>メッセージバッファ</p>
+</div>
+<div class="paragraph">
+<p>ER_ID mbfid = <a href="#API_CRE_MBF">acre_mbf</a>(const T_CMBF *pk_cmbf)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_MBF">sac_mbf</a>(ID mbfid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_mbf">del_mbf</a>(ID mbfid)										〔TD〕<br>
+ER ercd = <a href="#API_snd_mbf">snd_mbf</a>(ID mbfid, const void *msg, uint_t msgsz)		〔T〕<br>
+ER ercd = <a href="#API_snd_mbf">psnd_mbf</a>(ID mbfid, const void *msg, uint_t msgsz)		〔T〕<br>
+ER ercd = <a href="#API_snd_mbf">tsnd_mbf</a>(ID mbfid, const void *msg, uint_t msgsz, TMO tmout)					〔T〕<br>
+ER_UINT msgsz = <a href="#API_rcv_mbf">rcv_mbf</a>(ID mbfid, void *msg)					〔T〕<br>
+ER_UINT msgsz = <a href="#API_rcv_mbf">prcv_mbf</a>(ID mbfid, void *msg)					〔T〕<br>
+ER_UINT msgsz = <a href="#API_rcv_mbf">trcv_mbf</a>(ID mbfid, void *msg, TMO tmout)		〔T〕<br>
+ER ercd = <a href="#API_ini_mbf">ini_mbf</a>(ID mbfid)										〔T〕<br>
+ER ercd = <a href="#API_ref_mbf">ref_mbf</a>(ID mbfid, T_RMBF *pk_rmbf)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>スピンロック</p>
+</div>
+<div class="paragraph">
+<p>ER_ID spnid = <a href="#API_CRE_SPN">acre_spn</a>(const T_CSPN *pk_cspn)					〔TMD〕<br>
+ER ercd = <a href="#API_SAC_SPN">sac_spn</a>(ID spnid, const ACVCT *p_acvct)				〔TPMD〕<br>
+ER ercd = <a href="#API_del_spn">del_spn</a>(ID spnid)										〔TMD〕<br>
+ER ercd = <a href="#API_loc_spn">loc_spn</a>(ID spnid)										〔TM〕<br>
+ER ercd = <a href="#API_loc_spn">iloc_spn</a>(ID spnid)									〔IM〕<br>
+ER ercd = <a href="#API_try_spn">try_spn</a>(ID spnid)										〔TM〕<br>
+ER ercd = <a href="#API_try_spn">itry_spn</a>(ID spnid)									〔IM〕<br>
+ER ercd = <a href="#API_unl_spn">unl_spn</a>(ID spnid)										〔TM〕<br>
+ER ercd = <a href="#API_unl_spn">iunl_spn</a>(ID spnid)									〔IM〕<br>
+ER ercd = <a href="#API_ref_spn">ref_spn</a>(ID spnid, T_RSPN *pk_rspn)					〔TM〕<br></p>
+</div>
+<div class="paragraph">
+<p>(5) メモリプール管理機能</p>
+</div>
+<div class="paragraph">
+<p>固定長メモリプール</p>
+</div>
+<div class="paragraph">
+<p>ER_ID mpfid = <a href="#API_CRE_MPF">acre_mpf</a>(const T_CMPF *pk_cmpf)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_MPF">sac_mpf</a>(ID mpfid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_mpf">del_mpf</a>(ID mpfid)										〔TD〕<br>
+ER ercd = <a href="#API_get_mpf">get_mpf</a>(ID mpfid, void <strong>p_blk)						〔T〕<br>
+ER ercd = <a href="#API_get_mpf">pget_mpf</a>(ID mpfid, void </strong>p_blk)						〔T〕<br>
+ER ercd = <a href="#API_get_mpf">tget_mpf</a>(ID mpfid, void **p_blk, TMO tmout)			〔T〕<br>
+ER ercd = <a href="#API_rel_mpf">rel_mpf</a>(ID mpfid, void *blk)							〔T〕<br>
+ER ercd = <a href="#API_ini_mpf">ini_mpf</a>(ID mpfid)										〔T〕<br>
+ER ercd = <a href="#API_ref_mpf">ref_mpf</a>(ID mpfid, T_RMPF *pk_rmpf)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>(6) 時間管理機能</p>
+</div>
+<div class="paragraph">
+<p>システム時刻管理</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_get_tim">get_tim</a>(SYSTIM *p_systim)								〔T〕<br>
+ER ercd = <a href="#API_get_utm">get_utm</a>(SYSUTM *p_sysutm)								〔TI〕<br></p>
+</div>
+<div class="paragraph">
+<p>周期ハンドラ</p>
+</div>
+<div class="paragraph">
+<p>ER_ID cycid = <a href="#API_CRE_CYC">acre_cyc</a>(const T_CCYC *pk_ccyc)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_CYC">sac_cyc</a>(ID cycid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_cyc">del_cyc</a>(ID cycid)										〔TD〕<br>
+ER ercd = <a href="#API_sta_cyc">sta_cyc</a>(ID cycid)										〔T〕<br>
+ER ercd = <a href="#API_sta_cyc">msta_cyc</a>(ID cycid, ID prcid)							〔TM〕<br>
+ER ercd = <a href="#API_stp_cyc">stp_cyc</a>(ID cycid)										〔T〕<br>
+ER ercd = <a href="#API_ref_cyc">ref_cyc</a>(ID cycid, T_RCYC *pk_rcyc)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>アラームハンドラ</p>
+</div>
+<div class="paragraph">
+<p>ER_ID almid = <a href="#API_CRE_ALM">acre_alm</a>(const T_CALM *pk_calm)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_ALM">sac_alm</a>(ID almid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_alm">del_alm</a>(ID almid)										〔TD〕<br>
+ER ercd = <a href="#API_sta_alm">sta_alm</a>(ID almid, RELTIM almtim)						〔T〕<br>
+ER ercd = <a href="#API_sta_alm">ista_alm</a>(ID almid, RELTIM almtim)						〔I〕<br>
+ER ercd = <a href="#API_sta_alm">msta_alm</a>(ID almid, RELTIM almtim, ID prcid)			〔TM〕<br>
+ER ercd = <a href="#API_sta_alm">imsta_alm</a>(ID almid, RELTIM almtim, ID prcid)			〔IM〕<br>
+ER ercd = <a href="#API_stp_alm">stp_alm</a>(ID almid)										〔T〕<br>
+ER ercd = <a href="#API_stp_alm">istp_alm</a>(ID almid)									〔I〕<br>
+ER ercd = <a href="#API_ref_alm">ref_alm</a>(ID almid, T_RALM *pk_ralm)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>オーバランハンドラ</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_def_ovr">def_ovr,</a>(const T_DOVR *pk_dovr)						〔TD〕<br>
+ER ercd = <a href="#API_sta_ovr">sta_ovr</a>(ID tskid, OVRTIM ovrtim)						〔T〕<br>
+ER ercd = <a href="#API_sta_ovr">ista_ovr</a>(ID tskid, OVRTIM ovrtim)						〔I〕<br>
+ER ercd = <a href="#API_stp_ovr">stp_ovr</a>(ID tskid)										〔T〕<br>
+ER ercd = <a href="#API_stp_ovr">istp_ovr</a>(ID tskid)									〔I〕<br>
+ER ercd = <a href="#API_ref_ovr">ref_ovr</a>(ID tskid, T_ROVR *pk_rovr)					〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>(7) システム状態管理機能</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_sac_sys">sac_sys</a>(const ACVCT *p_acvct)							〔TPD〕<br>
+ER ercd = <a href="#API_rot_rdq">rot_rdq</a>(PRI tskpri)									〔T〕<br>
+ER ercd = <a href="#API_rot_rdq">irot_rdq</a>(PRI tskpri)									〔I〕<br>
+ER ercd = <a href="#API_rot_rdq">mrot_rdq</a>(PRI tskpri, ID prcid)						〔TM〕<br>
+ER ercd = <a href="#API_rot_rdq">imrot_rdq</a>(PRI tskpri, ID prcid)						〔IM〕<br>
+ER ercd = <a href="#API_get_tid">get_tid</a>(ID *p_tskid)									〔T〕<br>
+ER ercd = <a href="#API_get_tid">iget_tid</a>(ID *p_tskid)									〔I〕<br>
+ER ercd = <a href="#API_get_did">get_did</a>(ID *p_domid)									〔TP〕<br>
+ER ercd = <a href="#API_get_pid">get_pid</a>(ID *p_prcid)									〔TM〕<br>
+ER ercd = <a href="#API_get_pid">iget_pid</a>(ID *p_prcid)									〔IM〕<br>
+ER ercd = <a href="#API_loc_cpu">loc_cpu</a>()												〔T〕<br>
+ER ercd = <a href="#API_loc_cpu">iloc_cpu</a>()											〔I〕<br>
+ER ercd = <a href="#API_unl_cpu">unl_cpu</a>()												〔T〕<br>
+ER ercd = <a href="#API_unl_cpu">iunl_cpu</a>()											〔I〕<br>
+ER ercd = <a href="#API_dis_dsp">dis_dsp</a>()												〔T〕<br>
+ER ercd = <a href="#API_ena_dsp">ena_dsp</a>()												〔T〕<br>
+bool_t state = <a href="#API_sns_ctx">sns_ctx</a>()										〔TI〕<br>
+bool_t state = <a href="#API_sns_loc">sns_loc</a>()										〔TI〕<br>
+bool_t state = <a href="#API_sns_dsp">sns_dsp</a>()										〔TI〕<br>
+bool_t state = <a href="#API_sns_dpn">sns_dpn</a>()										〔TI〕<br>
+bool_t state = <a href="#API_sns_ker">sns_ker</a>()										〔TI〕<br>
+ER ercd = <a href="#API_ext_ker">ext_ker</a>()												〔TI〕<br>
+ER ercd = <a href="#API_ref_sys">ref_sys</a>(T_RSYS *pk_rsys)								〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>(8) メモリオブジェクト管理機能</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_att_mem">att_mem</a>(const T_AMEM *pk_amem)						〔TPD〕<br>
+ER ercd = <a href="#API_att_pma">att_pma</a>(const T_AMEM *pk_apma)						〔TPD〕<br>
+ER ercd = <a href="#API_sac_mem">sac_mem</a>(const void *base, const ACVCT *p_acvct)		〔TPD〕<br>
+ER ercd = <a href="#API_det_mem">det_mem</a>(const void *base)								〔TPD〕<br>
+ER ercd = <a href="#API_prb_mem">prb_mem</a>(const void *base, SIZE size,	ID tskid, MODE pmmode)				〔TP〕<br>
+ER ercd = <a href="#API_ref_mem">ref_mem</a>(const void *base, T_RMEM *pk_rmem)			〔TP〕<br></p>
+</div>
+<div class="paragraph">
+<p>(9) 割込み管理機能</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_cfg_int">cfg_int</a>(INTNO intno, const T_CINT *pk_cint)			〔TD〕<br>
+ER_ID isrid = <a href="#API_CRE_ISR">acre_isr</a>(const T_CISR *pk_cisr)					〔TD〕<br>
+ER ercd = <a href="#API_SAC_ISR">sac_isr</a>(ID isrid, const ACVCT *p_acvct)				〔TPD〕<br>
+ER ercd = <a href="#API_del_isr">del_isr</a>(ID isrid)										〔TD〕<br>
+ER ercd = <a href="#API_ref_isr">ref_isr</a>(ID isrid, T_RISR *pk_risr)					〔T〕<br>
+ER ercd = <a href="#API_DEF_INH">def_inh</a>(INHNO inhno, const T_DINH *pk_dinh)			〔TD〕<br>
+ER ercd = <a href="#API_dis_int">dis_int</a>(INTNO intno)									〔T〕<br>
+ER ercd = <a href="#API_ena_int">ena_int</a>(INTNO intno)									〔T〕<br>
+ER ercd = <a href="#API_ref_int">ref_int</a>(INTNO intno, T_RINT *pk_rint)					〔T〕<br>
+ER ercd = <a href="#API_chg_ipm">chg_ipm</a>(PRI intpri)									〔T〕<br>
+ER ercd = <a href="#API_get_ipm">get_ipm</a>(PRI *p_intpri)								〔T〕<br></p>
+</div>
+<div class="paragraph">
+<p>(10) CPU例外管理機能</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_def_exc">def_exc</a>(EXCNO excno, const T_DEXC *pk_dexc)			〔TD〕<br>
+bool_t stat = <a href="#API_xsns_dpn">xsns_dpn</a>(void *p_excinf)							〔TI〕<br>
+bool_t stat = <a href="#API_xsns_xpn">xsns_xpn</a>(void *p_excinf)							〔TI〕<br></p>
+</div>
+<div class="paragraph">
+<p>(11) 拡張サービスコール管理機能</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_DEF_SVC">def_svc</a>(FN fncd, const T_DSVC *pk_dsvc)				〔TPD〕<br>
+ER_UINT ercd = <a href="#API_CAL_SVC">cal_svc</a>(FN fncd, intptr_t par1, intptr_t par2,intptr_t par3, intptr_t par4, intptr_t par5)	〔TIP〕</p>
+</div>
+<div class="paragraph">
+<p>(12) システム構成管理機能</p>
+</div>
+<div class="paragraph">
+<p>ER ercd = <a href="#API_ref_cfg">ref_cfg</a>(T_RCFG *pk_rcfg)								〔T〕<br>
+ER ercd = <a href="#API_ref_ver">ref_ver</a>(T_RVER *pk_rver)								〔T〕<br></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_静的api一覧">1.2. 静的API一覧</h3>
+<div class="paragraph">
+<p>(1) タスク管理機能</p>
+</div>
+<div class="paragraph">
+<p>＊保護機能対応でないカーネルの場合</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_TSK">CRE_TSK</a>(ID tskid, { ATR tskatr, intptr_t exinf, TASK task, PRI itskpri, SIZE stksz, STK_T *stk })		〔S〕</p>
+</div>
+<div class="paragraph">
+<p>＊保護機能対応カーネルの場合</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_TSK">CRE_TSK</a>(ID tskid, { ATR tskatr, intptr_t exinf, TASK task, PRI itskpri, SIZE stksz, STK_T *stk,	SIZE sstksz, STK_T *sstk })	〔SP〕
+	※ sstkszおよびsstkの記述は省略することができる．</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_AID_TSK">AID_TSK</a>(uint_t notsk)											〔SD〕<br>
+<a href="#API_SAC_TSK">SAC_TSK</a>(ID tskid, { ACPTN acptn1, ACPTN acptn2,	ACPTN acptn3, ACPTN acptn4 })				〔SP〕<br>
+<a href="#API_DEF_EPR">DEF_EPR</a>(ID tskid, { PRI exepri })								〔S〕</p>
+</div>
+<div class="paragraph">
+<p>(2) タスク付属同期機能</p>
+</div>
+<div class="paragraph">
+<p>なし</p>
+</div>
+<div class="paragraph">
+<p>(3) タスク例外処理機能</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_def_tex">DEF_TEX</a>(ID tskid, { ATR texatr, TEXRTN texrtn })				〔S〕</p>
+</div>
+<div class="paragraph">
+<p>(4) 同期・通信機能</p>
+</div>
+<div class="paragraph">
+<p>セマフォ</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_SEM">CRE_SEM</a>(ID semid, { ATR sematr, uint_t isemcnt, uint_t maxsem })〔S〕<br>
+<a href="#API_AID_SEM">AID_SEM</a>(uint_t nosem)											〔SD〕<br>
+<a href="#API_SAC_SEM">SAC_SEM</a>(ID semid, { ACPTN acptn1, ACPTN acptn2,	ACPTN acptn3, ACPTN acptn4 })				〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>イベントフラグ</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_FLG">CRE_FLG</a>(ID flgid, { ATR flgatr, FLGPTN iflgptn })				〔S〕<br>
+<a href="#API_AID_FLG">AID_FLG</a>(uint_t noflg)											〔SD〕<br>
+<a href="#API_SAC_FLG">SAC_FLG</a>(ID flgid, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })					〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>データキュー</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_DTQ">CRE_DTQ</a>(ID dtqid, { ATR dtqatr, uint_t dtqcnt, void *dtqmb })	〔S〕<br>
+<a href="#API_AID_DTQ">AID_DTQ</a>(uint_t nodtq)											〔SD〕<br>
+<a href="#API_SAC_DTQ">SAC_DTQ</a>(ID dtqid, { ACPTN acptn1, ACPTN acptn2,	ACPTN acptn3, ACPTN acptn4 })				〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>優先度データキュー</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_PDQ">CRE_PDQ</a>(ID pdqid, { ATR pdqatr, uint_t pdqcnt, PRI maxdpri, void *pdqmb })					〔S〕<br>
+<a href="#API_AID_PDQ">AID_PDQ</a>(uint_t nopdq)											〔SD〕<br>
+<a href="#API_SAC_PDQ">SAC_PDQ</a>(ID pdqid, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })					〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>メールボックス</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_MBX">CRE_MBX</a>(ID mbxid, { ATR mbxatr, PRI maxmpri, void *mprihd })	〔Sp〕<br>
+<a href="#API_AID_MBX">AID_MBX</a>(uint_t nombx)											〔SpD〕</p>
+</div>
+<div class="paragraph">
+<p>ミューテックス</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_MTX">CRE_MTX</a>(ID mtxid, { ATR mtxatr, PRI ceilpri })					〔S〕<br>
+<a href="#API_AID_MTX">AID_MTX</a>(uint_t nomtx)											〔SD〕<br>
+<a href="#API_SAC_MTX">SAC_MTX</a>(ID mtxid, { ACPTN acptn1, ACPTN acptn2,	ACPTN acptn3, ACPTN acptn4 })				〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>メッセージバッファ</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_MBF">CRE_MBF</a>(ID mbfid, { ATR mbfatr, uint_t maxmsz, SIZE mbfsz, void *mbfmb })		〔S〕<br>
+<a href="#API_AID_MBF">AID_MBF</a>(uint_t nombf)											〔SD〕<br>
+<a href="#API_SAC_MBF">SAC_MBF</a>(ID mbfid, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })					〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>スピンロック</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_SPN">CRE_SPN</a>(ID spnid, { ATR spnatr })								〔SM〕<br>
+<a href="#API_AID_SPN">AID_SPN</a>(uint_t nospn)											〔SMD〕<br>
+<a href="#API_SAC_SPN">SAC_SPN</a>(ID spnid, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })					〔SPM〕</p>
+</div>
+<div class="paragraph">
+<p>(5) メモリプール管理機能</p>
+</div>
+<div class="paragraph">
+<p>固定長メモリプール</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_MPF">CRE_MPF</a>(ID mpfid, { ATR mpfatr, uint_t blkcnt, uint_t blksz, MPF_T *mpf, void *mpfmb })	〔S〕<br>
+<a href="#API_AID_MPF">AID_MPF</a>(uint_t nompf)											〔SD〕<br>
+<a href="#API_SAC_MPF">SAC_MPF</a>(ID mpfid, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })					〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>(6) 時間管理機能</p>
+</div>
+<div class="paragraph">
+<p>周期ハンドラ</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_CYC">CRE_CYC</a>(ID cycid, { ATR cycatr, intptr_t exinf, CYCHDR cychdr, RELTIM cyctim, RELTIM cycphs })	〔S〕<br>
+<a href="#API_AID_CYC">AID_CYC</a>(uint_t nocyc)											〔SD〕<br>
+<a href="#API_SAC_CYC">SAC_CYC</a>(ID cycid, { ACPTN acptn1, ACPTN acptn2,	ACPTN acptn3, ACPTN acptn4 })				〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>アラームハンドラ</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_CRE_ALM">CRE_ALM</a>(ID almid, { ATR almatr, intptr_t exinf, ALMHDR almhdr })〔S〕<br>
+<a href="#API_AID_ALM">AID_ALM</a>(uint_t noalm)											〔SD〕<br>
+<a href="#API_SAC_ALM">SAC_ALM</a>(ID almid, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })					〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>オーバランハンドラ</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_DEF_OVR">DEF_OVR</a>({ ATR ovratr, OVRHDR ovrhdr })							〔S〕</p>
+</div>
+<div class="paragraph">
+<p>(7) システム状態管理機能</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_sac_sys">SAC_SYS</a>({ ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })							〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>(8) メモリオブジェクト管理機能</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_ATT_REG">ATT_REG</a>("メモリリージョン名",	{ ATR regatr, void *base, SIZE size })								〔SP〕<br>
+<a href="#API_DEF_SRG">DEF_SRG</a>("標準ROMリージョン名", "標準RAMリージョン名")			〔SP〕<br>
+<a href="#API_ATT_SEC">ATT_SEC</a>("セクション名", { ATR mematr, "メモリリージョン名" })	〔SP〕<br>
+<a href="#API_ATA_SEC">ATA_SEC</a>("セクション名", { ATR mematr, "メモリリージョン名" }, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })	〔SP〕<br>
+<a href="#API_LNK_SEC">LNK_SEC</a>("セクション名", { "メモリリージョン名" })				〔SP〕<br>
+<a href="#API_ATT_MOD">ATT_MOD</a>("オブジェクトモジュール名")								〔SP〕<br>
+<a href="#API_ATA_MOD">ATA_MOD</a>("オブジェクトモジュール名", { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })								〔SP〕<br>
+<a href="#API_att_mem">ATT_MEM</a>({ ATR mematr, void *base, SIZE size })					〔SP〕<br>
+<a href="#API_ATA_MEM">ATA_MEM</a>({ ATR mematr, void *base, SIZE size }, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })					〔SP〕<br>
+<a href="#API_att_pma">ATA_PMA</a>({ ATR mematr, void *base, SIZE size, void *paddr })		〔SP〕<br>
+<a href="#API_ATA_PMA">ATA_PMA</a>({ ATR mematr, void *base, SIZE size, void *paddr  }, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })	〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>(9) 割込み管理機能</p>
+</div>
+<div class="paragraph">
+<p><a href="#API-CFG_INT">CFG_INT</a>(INTNO intno, { ATR intatr, PRI intpri })				〔S〕<br>
+<a href="#API_CRE_ISR">CRE_ISR</a>(ID isrid, { ATR isratr, intptr_t exinf, INTNO intno, ISR isr, PRI isrpri })					〔S〕<br>
+<a href="#API_ATT_ISR">ATT_ISR</a>({ ATR isratr, intptr_t exinf, INTNO intno, ISR isr, PRI isrpri })							〔S〕<br>
+<a href="#API_AID_ISR">AID_ISR</a>(uint_t noisr)											〔SD〕<br>
+<a href="#API_SAC_ISR">SAC_ISR</a>(ID isrid, { ACPTN acptn1, ACPTN acptn2, ACPTN acptn3, ACPTN acptn4 })					〔SP〕<br>
+<a href="#API_DEF_INH">DEF_INH</a>(INHNO inhno, { ATR inhatr, INTHDR inthdr })				〔S〕</p>
+</div>
+<div class="paragraph">
+<p>(10) CPU例外管理機能</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_def_exc">DEF_EXC</a>(EXCNO excno, { ATR excatr, EXCHDR exchdr })				〔S〕</p>
+</div>
+<div class="paragraph">
+<p>(11) 拡張サービスコール管理機能</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_DEF_SVC">DEF_SVC</a>(FN fncd, { ATR svcatr, EXTSVC svcrtn, SIZE stksz })		〔SP〕</p>
+</div>
+<div class="paragraph">
+<p>(12) システム構成管理機能</p>
+</div>
+<div class="paragraph">
+<p><a href="#API_LMT_DOM">LMT_DOM</a>({ PRI mintpri })										〔SP〕
+<a href="#API_DEF_ICS">DEF_ICS</a>({ SIZE istksz, STK_T *istk })							〔S〕
+<a href="#API_DEF_STK">DEF_STK</a>({ SIZE stksz, STK_T *stk })								〔S〕
+<a href="#API_ATT_INI">ATT_INI</a>({ ATR iniatr, intptr_t exinf, INIRTN inirtn })			〔S〕
+<a href="#API_ATT_TER">ATT_TER</a>({ ATR teratr, intptr_t exinf, TERRTN terrtn })			〔S〕</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_データ型">1.3. データ型</h3>
+<div class="sect3">
+<h4 id="_toppers共通データ型">1.3.1. TOPPERS共通データ型</h4>
+<div class="literalblock">
+<div class="content">
+<pre>int8_t		符号付き8ビット整数（オプション，C99準拠）
+uint8_t		符号無し8ビット整数（オプション，C99準拠）
+int16_t		符号付き16ビット整数（C99準拠）
+uint16_t	符号無し16ビット整数（C99準拠）
+int32_t		符号付き32ビット整数（C99準拠）
+uint32_t	符号無し32ビット整数（C99準拠）
+int64_t		符号付き64ビット整数（オプション，C99準拠）
+uint64_t	符号無し64ビット整数（オプション，C99準拠）
+int128_t	符号付き128ビット整数（オプション，C99準拠）
+uint128_t	符号無し128ビット整数（オプション，C99準拠）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>int_least8_t	8ビット以上の符号付き整数（C99準拠）
+uint_least8_t	int_least8_t型と同じサイズの符号無し整数（C99準拠）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>float32_t	IEEE754準拠の32ビット単精度浮動小数点数（オプション）
+double64_t	IEEE754準拠の64ビット倍精度浮動小数点数（オプション）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>bool_t		真偽値（trueまたはfalse）
+int_t		16ビット以上の符号付き整数
+uint_t		int_t型と同じサイズの符号無し整数
+long_t		32ビット以上かつint_t型以上のサイズの符号付き整数
+ulong_t		long_t型と同じサイズの符号無し整数</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>intptr_t	ポインタを格納できるサイズの符号付き整数（C99準拠）
+uintptr_t	intptr_t型と同じサイズの符号無し整数（C99準拠）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>FN			機能コード（符号付き整数，int_tに定義）
+ER			エラーコード（符号付き整数，int_tに定義）
+ID			オブジェクトのID番号（符号付き整数，int_tに定義）
+ATR			オブジェクト属性（符号無し整数，uint_tに定義）
+STAT		オブジェクトの状態（符号無し整数，uint_tに定義）
+MODE		サービスコールの動作モード（符号無し整数，uint_tに定義）
+PRI			優先度（符号付き整数，int_tに定義）
+SIZE		メモリ領域のサイズ（符号無し整数，ポインタを格納できる
+			サイズの符号無し整数型に定義）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMO			タイムアウト指定（符号付き整数，単位はミリ秒，int_tに定義）
+RELTIM		相対時間（符号無し整数，単位はミリ秒，uint_tに定義）
+SYSTIM		システム時刻（符号無し整数，単位はミリ秒，ulong_tに定義）
+SYSUTM		性能評価用システム時刻（符号無し整数，単位はマイクロ秒，
+			ulong_tに定義）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>FP			プログラムの起動番地（型の定まらない関数ポインタ）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>ER_BOOL		エラーコードまたは真偽値（符号付き整数，int_tに定義）
+ER_ID		エラーコードまたはID番号（符号付き整数，int_tに定義，
+			負のID番号は格納できない）
+ER_UINT		エラーコードまたは符号無し整数（符号付き整数，int_tに
+			定義，符号無し整数を格納する場合の有効ビット数はuint_t
+			より1ビット短い）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>MB_T		オブジェクト管理領域を確保するためのデータ型</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>ACPTN		アクセス許可パターン（符号無し32ビット整数，uint32_tに
+			定義）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct acvct {		/* アクセス許可ベクタ */
+	ACPTN	acptn1;			/* 通常操作1のアクセス許可パターン */
+	ACPTN	acptn2;			/* 通常操作2のアクセス許可パターン */
+	ACPTN	acptn3;			/* 管理操作のアクセス許可パターン */
+	ACPTN	acptn4;			/* 参照操作のアクセス許可パターン */
+} ACVCT;</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_カーネルの使用するデータ型">1.3.2. カーネルの使用するデータ型</h4>
+<div class="literalblock">
+<div class="content">
+<pre>TEXPTN		タスク例外要因のビットパターン（符号無し整数，uint_tに定義）
+FLGPTN		イベントフラグのビットパターン（符号無し整数，uint_tに定義）
+OVRTIM		プロセッサ時間（符号無し整数，単位はマイクロ秒，ulong_tに定義）
+INTNO		割込み番号（符号無し整数，uint_tに定義）
+INHNO		割込みハンドラ番号（符号無し整数，uint_tに定義）
+EXCNO		CPU例外ハンドラ番号（符号無し整数，uint_tに定義）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TASK		タスクのメインルーチン（関数ポインタ）
+TEXRTN		タスク例外処理ルーチン（関数ポインタ）
+CYCHDR		周期ハンドラ（関数ポインタ）
+ALMHDR		アラームハンドラ（関数ポインタ）
+OVRHDR		オーバランハンドラ（関数ポインタ）
+ISR			割込みサービスルーチン（関数ポインタ）
+INTHDR		割込みハンドラ（関数ポインタ）
+EXCHDR		CPU例外ハンドラ（関数ポインタ）
+EXTSVC		拡張サービスコール（関数ポインタ）
+INIRTN		初期化ルーチン（関数ポインタ）
+TERRTN		終了処理ルーチン（関数ポインタ）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>STK_T		スタック領域を確保するためのデータ型
+MPF_T		固定長メモリプール領域を確保するためのデータ型</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メールボックスのメッセージヘッダ【NGKI4001】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef	struct t_msg {
+	struct t_msg	*pk_next;
+} T_MSG;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メールボックスの優先度付きメッセージヘッダ【NGKI4002】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef	struct t_msg_pri {
+	T_MSG		msgque;			/* メールボックスのメッセージヘッダ */
+	PRI			msgpri;			/* メッセージ優先度 */
+} T_MSG_PRI;</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_カーネルの使用するパケット形式">1.3.3. カーネルの使用するパケット形式</h4>
+<div class="paragraph">
+<p>(1) タスク管理機能</p>
+</div>
+<div class="paragraph">
+<p>タスクの生成情報のパケット形式【NGKI4003】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_ctsk {
+	ATR			tskatr;		/* タスク属性 */
+	intptr_t	exinf;		/* タスクの拡張情報 */
+	TASK		task;		/* タスクのメインルーチンの先頭番地 */
+	PRI			itskpri;	/* タスクの起動時優先度 */
+	SIZE		stksz;		/* タスクのスタック領域のサイズ */
+	STK_T *		stk;		/* タスクのスタック領域の先頭番地 */
+	/* 以下は，保護機能対応カーネルの場合 */
+	SIZE		sstksz;		/* タスクのシステムスタック領域のサイズ */
+	STK_T *		sstk;		/* タスクのシステムスタック領域の先頭番地 */
+} T_CTSK;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>タスクの現在状態のパケット形式【NGKI4004】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rtsk {
+	STAT		tskstat;	/* タスク状態 */
+	PRI			tskpri;		/* タスクの現在優先度 */
+	PRI			tskbpri;	/* タスクのベース優先度 */
+	STAT		tskwait;	/* 待ち要因 */
+	ID			wobjid;		/* 待ち対象のオブジェクトのID */
+	TMO			lefttmo;	/* タイムアウトするまでの時間 */
+	uint_t		actcnt;		/* 起動要求キューイング数 */
+	uint_t		wupcnt;		/* 起床要求キューイング数 */
+	/* 以下は，保護機能対応カーネルの場合 */
+	bool_t		texmsk;		/* タスク例外マスク状態か否か */
+	bool_t		waifbd;		/* 待ち禁止状態か否か */
+	uint_t		svclevel;	/* 拡張サービスコールのネストレベル */
+	/* 以下は，マルチプロセッサ対応カーネルの場合 */
+	ID			prcid;		/* 割付けプロセッサのID */
+	ID			actprc		/* 次の起動時の割付けプロセッサのID */
+} T_RTSK;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(2) タスク付属同期機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>なし</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(3) タスク例外処理機能</p>
+</div>
+<div class="paragraph">
+<p>タスク例外処理ルーチンの定義情報のパケット形式【NGKI4005】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_dtex {
+	ATR			texatr;		/* タスク例外処理ルーチン属性 */
+	TEXRTN		texrtn;		/* タスク例外処理ルーチンの先頭番地 */
+} T_DTEX;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>タスク例外処理の現在状態のパケット形式【NGKI4006】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rtex {
+	STAT		texstat;	/* タスク例外処理の状態 */
+	TEXPTN		pndptn;		/* 保留例外要因 */
+} T_RTEX;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(4) 同期・通信機能</p>
+</div>
+<div class="paragraph">
+<p>セマフォの生成情報のパケット形式【NGKI4007】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_csem {
+	ATR			sematr;		/* セマフォ属性 */
+	uint_t		isemcnt;	/* セマフォの初期資源数 */
+	uint_t		maxsem;		/* セマフォの最大資源数 */
+} T_CSEM;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>セマフォの現在状態のパケット形式【NGKI4008】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rsem {
+	ID			wtskid;		/* セマフォの待ち行列の先頭のタスクのID番号 */
+	uint_t		semcnt;		/* セマフォの資源数 */
+} T_RSEM;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>イベントフラグの生成情報のパケット形式【NGKI4009】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cflg {
+	ATR			flgatr;		/* イベントフラグ属性 */
+	FLGPTN		iflgptn;	/* イベントフラグの初期ビットパターン */
+} T_CFLG;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>イベントフラグの現在状態のパケット形式【NGKI4010】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rflg {
+	ID			wtskid;		/* イベントフラグの待ち行列の先頭のタス
+							   クのID番号 */
+	FLGPTN		flgptn;		/* イベントフラグのビットパターン */
+} T_RFLG;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>データキューの生成情報のパケット形式【NGKI4011】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cdtq {
+	ATR			dtqatr;		/* データキュー属性 */
+	uint_t		dtqcnt;		/* データキュー管理領域に格納できるデータ数 */
+	void *		dtqmb;		/* データキュー管理領域の先頭番地 */
+} T_CDTQ;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>データキューの現在状態のパケット形式【NGKI4012】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rdtq {
+	ID			stskid;		/* データキューの送信待ち行列の先頭のタ
+							   スクのID番号 */
+	ID			rtskid;		/* データキューの受信待ち行列の先頭のタ
+							   スクのID番号 */
+	uint_t		sdtqcnt;	/* データキュー管理領域に格納されている
+							   データの数 */
+} T_RDTQ;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>優先度データキューの生成情報のパケット形式【NGKI4013】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cpdq {
+	ATR			pdqatr;		/* 優先度データキュー属性 */
+	uint_t		pdqcnt;		/* 優先度データキュー管理領域に格納でき
+							   るデータ数 */
+	PRI			maxdpri;	/* 優先度データキューに送信できるデータ
+							   優先度の最大値 */
+	void *		pdqmb;		/* 優先度データキュー管理領域の先頭番地 */
+} T_CPDQ;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>優先度データキューの現在状態のパケット形式【NGKI4014】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rpdq {
+	ID			stskid;		/* 優先度データキューの送信待ち行列の先
+							   頭のタスクのID番号 */
+	ID			rtskid;		/* 優先度データキューの受信待ち行列の先
+							   頭のタスクのID番号 */
+	uint_t		spdqcnt;	/* 優先度データキュー管理領域に格納され
+							   ているデータの数 */
+} T_RPDQ;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メールボックスの生成情報のパケット形式【NGKI4015】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cmbx {
+	ATR			mbxatr;		/* メールボックス属性 */
+	PRI			maxmpri;	/* 優先度メールボックスに送信できるメッ
+							   セージ優先度の最大値 */
+	void *		mprihd;		/* 優先度別のメッセージキューヘッダ領域
+							   の先頭番地 */
+} T_CMBX;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メールボックスの現在状態のパケット形式【NGKI4016】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rmbx {
+	ID			wtskid;		/* メールボックスの待ち行列の先頭のタスク
+							   のID番号 */
+	T_MSG		*pk_msg;	/* メッセージキューの先頭につながれたメッ
+							   セージの先頭番地 */
+} T_RMBX;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ミューテックスの生成情報のパケット形式【NGKI4017】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cmtx {
+	ATR			mtxatr;		/* ミューテックス属性 */
+	PRI			ceilpri;	/* ミューテックスの上限優先度 */
+} T_CMTX;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ミューテックスの現在状態のパケット形式【NGKI4018】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rmtx {
+	ID			htskid;		/* ミューテックスをロックしているタス
+							   クのID番号 */
+	ID			wtskid;		/* ミューテックスの待ち行列の先頭のタ
+							   スクのID番号 */
+} T_RMTX;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メッセージバッファの生成情報のパケット形式【NGKI4037】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cmbf {
+	ATR			mbfatr;		/* メッセージバッファ属性 */
+	uint_t		maxmsz;		/* メッセージバッファの最大メッセージ
+							   サイズ（バイト数）*/
+	SIZE		mbfsz;		/* メッセージバッファ管理領域のサイズ
+							   （バイト数）*/
+	void *		mbfmb;		/* メッセージバッファ管理領域の先頭番地 */
+} T_CMBF;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メッセージバッファの現在状態のパケット形式【NGKI4038】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rmbf {
+	ID		stskid;		/* メッセージバッファの送信待ち行列の先頭の
+						   タスクのID番号 */
+	ID		rtskid;		/* メッセージバッファの受信待ち行列の先頭の
+						   タスクのID番号 */
+	uint_t	smbfcnt;	/* メッセージバッファ管理領域に格納されてい
+						   るメッセージの数 */
+	SIZE	fmbfsz;		/* メッセージバッファ管理領域中の空き領域の
+						   サイズ */
+} T_RMBF;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>スピンロックの生成情報のパケット形式【NGKI4019】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cspn {
+	ATR			spnatr;		/* スピンロック属性 */
+} T_CSPN;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>スピンロックの現在状態のパケット形式【NGKI4020】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rspn {
+	STAT		spnstat		/* スピンロックのロック状態 */
+} T_RSPN;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(5) メモリプール管理機能</p>
+</div>
+<div class="paragraph">
+<p>固定長メモリプールの生成情報のパケット形式【NGKI4021】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cmpf {
+	ATR			mpfatr;		/* 固定長メモリプール属性 */
+	uint_t		blkcnt;		/* 獲得できる固定長メモリブロックの数 */
+	uint_t		blksz;		/* 固定長メモリブロックのサイズ */
+	MPF_T *		mpf;		/* 固定長メモリプール領域の先頭番地 */
+	void *		mpfmb;		/* 固定長メモリプール管理領域の先頭番地 */
+} T_CMPF;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>固定長メモリプールの現在状態のパケット形式【NGKI4022】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rmpf {
+	ID			wtskid;		/* 固定長メモリプールの待ち行列の先頭の
+							   タスクのID番号 */
+	uint_t		fblkcnt;	/* 固定長メモリプール領域の空きメモリ領
+							   域に割り付けることができる固定長メモ
+							   リブロックの数 */
+} T_RMPF;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(6) 時間管理機能</p>
+</div>
+<div class="paragraph">
+<p>周期ハンドラの生成情報のパケット形式【NGKI4023】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_ccyc {
+	ATR			cycatr;		/* 周期ハンドラ属性 */
+	intptr_t	exinf;		/* 周期ハンドラの拡張情報 */
+	CYCHDR		cychdr;		/* 周期ハンドラの先頭番地 */
+	RELTIM		cyctim;		/* 周期ハンドラの起動周期 */
+	RELTIM		cycphs;		/* 周期ハンドラの起動位相 */
+} T_CCYC;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>周期ハンドラの現在状態のパケット形式【NGKI4024】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rcyc {
+	STAT		cycstat;	/* 周期ハンドラの動作状態 */
+	RELTIM		lefttim;	/* 次に周期ハンドラを起動する時刻までの
+							   相対時間 */
+	/* 以下は，マルチプロセッサ対応カーネルの場合 */
+	ID			prcid;		/* 割付けプロセッサのID */
+} T_RCYC;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>アラームハンドラの生成情報のパケット形式【NGKI4025】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_calm {
+	ATR			almatr;		/* アラームハンドラ属性 */
+	intptr_t	exinf;		/* アラームハンドラの拡張情報 */
+	ALMHDR		almhdr;		/* アラームハンドラの先頭番地 */
+} T_CALM;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>アラームハンドラの現在状態のパケット形式【NGKI4026】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_ralm {
+	STAT		almstat;	/* アラームハンドラの動作状態 */
+	RELTIM		lefttim;	/* アラームハンドラを起動する時刻までの
+							   相対時間 */
+	/* 以下は，マルチプロセッサ対応カーネルの場合 */
+	ID			prcid;		/* 割付けプロセッサのID */
+} T_RALM;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>オーバランハンドラの定義情報のパケット形式【NGKI4027】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_dovr {
+	ATR			ovratr;		/* オーバランハンドラ属性 */
+	OVRHDR		ovrhdr;		/* オーバランハンドラの先頭番地 */
+} T_DOVR;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>オーバランハンドラの現在状態のパケット形式【NGKI4028】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_rovr {
+	STAT	ovrstat;		/* オーバランハンドラの動作状態 */
+	OVRTIM	leftotm;		/* 残りプロセッサ時間 */
+} T_ROVR;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(7) システム状態管理機能</p>
+</div>
+<div class="paragraph">
+<p>システムの現在状態のパケット形式</p>
+</div>
+<div class="paragraph">
+<p>☆未完成</p>
+</div>
+<div class="paragraph">
+<p>(8) メモリオブジェクト管理機能</p>
+</div>
+<div class="paragraph">
+<p>メモリオブジェクトの登録情報のパケット形式【NGKI4029】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_amem {
+	ATR			mematr		/* メモリオブジェクト属性 */
+	void *		base		/* 登録するメモリ領域の先頭番地 */
+	SIZE		size		/* 登録するメモリ領域のサイズ（バイト数）*/
+} T_AMEM;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>物理メモリ領域の登録情報のパケット形式【NGKI4030】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_apma {
+	ATR			mematr		/* メモリオブジェクト属性 */
+	void *		base		/* 登録するメモリ領域の先頭番地 */
+	SIZE		size		/* 登録するメモリ領域のサイズ（バイト数）*/
+	void *		paddr		/* 登録するメモリ領域の物理アドレスの先頭
+							   番地 */
+} T_APMA;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メモリオブジェクトの現在状態のパケット形式</p>
+</div>
+<div class="paragraph">
+<p>☆未完成</p>
+</div>
+<div class="paragraph">
+<p>(9) 割込み管理機能</p>
+</div>
+<div class="paragraph">
+<p>割込み要求ラインの属性の設定情報のパケット形式【NGKI4031】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cint {
+	ATR			intatr;		/* 割込み要求ライン属性 */
+	PRI			intpri;		/* 割込み優先度 */
+} T_CINT;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>割込みサービスルーチンの生成情報のパケット形式【NGKI4032】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_cisr {
+	ATR			isratr;		/* 割込みサービスルーチン属性 */
+	intptr_t	exinf;		/* 割込みサービスルーチンの拡張情報 */
+	INTNO		intno;		/* 割込みサービスルーチンを登録する割込
+							   み番号 */
+	ISR			isr;		/* 割込みサービスルーチンの先頭番地 */
+	PRI			isrpri;		/* 割込みサービスルーチン優先度 */
+} T_CISR;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>割込みサービスルーチンの現在状態のパケット形式</p>
+</div>
+<div class="paragraph">
+<p>☆未完成</p>
+</div>
+<div class="paragraph">
+<p>割込みハンドラの定義情報のパケット形式【NGKI4033】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_dinh {
+	ATR			inhatr;		/* 割込みハンドラ属性 */
+	INTHDR		inthdr;		/* 割込みハンドラの先頭番地 */
+} T_DINH;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>割込み要求ラインの現在状態のパケット形式</p>
+</div>
+<div class="paragraph">
+<p>☆未完成</p>
+</div>
+<div class="paragraph">
+<p>(10) CPU例外管理機能</p>
+</div>
+<div class="paragraph">
+<p>CPU例外ハンドラの定義情報のパケット形式【NGKI4034】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_dexc {
+	ATR			excatr;		/* CPU例外ハンドラ属性 */
+	EXCHDR		exchdr;		/* CPU例外ハンドラの先頭番地 */
+} T_DEXC;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(11) 拡張サービスコール管理機能</p>
+</div>
+<div class="paragraph">
+<p>拡張サービスコールの定義情報のパケット形式【NGKI4035】</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>typedef struct t_dsvc {
+	ATR			svcatr		/* 拡張サービスコール属性 */
+	EXTSVC		svcrtn		/* 拡張サービスコールの先頭番地 */
+	SIZE		stksz		/* 拡張サービスコールで使用するスタック
+							   サイズ */
+} T_DSVC;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(12) システム構成管理機能</p>
+</div>
+<div class="paragraph">
+<p>コンフィギュレーション情報のパケット形式</p>
+</div>
+<div class="paragraph">
+<p>☆未完成</p>
+</div>
+<div class="paragraph">
+<p>バージョン情報のパケット形式</p>
+</div>
+<div class="paragraph">
+<p>☆未完成</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_定数とマクロ">1.4. 定数とマクロ</h3>
+<div class="sect3">
+<h4 id="_toppers共通定数">1.4.1. TOPPERS共通定数</h4>
+<div class="paragraph">
+<p>(1) 一般定数</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>NULL					無効ポインタ</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>true			1		真
+false			0		偽</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>E_OK			0		正常終了</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(2) 整数型に格納できる最大値と最小値</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>INT8_MAX			int8_tに格納できる最大値（オプション，C99準拠）
+INT8_MIN			int8_tに格納できる最小値（オプション，C99準拠）
+UINT8_MAX			uint8_tに格納できる最大値（オプション，C99準拠）
+INT16_MAX			int16_tに格納できる最大値（C99準拠）
+INT16_MIN			int16_tに格納できる最小値（C99準拠）
+UINT16_MAX			uint16_tに格納できる最大値（C99準拠）
+INT32_MAX			int32_tに格納できる最大値（C99準拠）
+INT32_MIN			int32_tに格納できる最小値（C99準拠）
+UINT32_MAX			uint32_tに格納できる最大値（C99準拠）
+INT64_MAX			int64_tに格納できる最大値（オプション，C99準拠）
+INT64_MIN			int64_tに格納できる最小値（オプション，C99準拠）
+UINT64_MAX			uint64_tに格納できる最大値（オプション，C99準拠）
+INT128_MAX			int128_tに格納できる最大値（オプション，C99準拠）
+INT128_MIN			int128_tに格納できる最小値（オプション，C99準拠）
+UINT128_MAX			uint128_tに格納できる最大値（オプション，C99準拠）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>INT_LEAST8_MAX		int_least8_tに格納できる最大値（C99準拠）
+INT_LEAST8_MIN		int_least8_tに格納できる最小値（C99準拠）
+UINT_LEAST8_MAX		uint_least8_tに格納できる最大値（C99準拠）
+INT_MAX				int_tに格納できる最大値（C90準拠）
+INT_MIN				int_tに格納できる最小値（C90準拠）
+UINT_MAX			uint_tに格納できる最大値（C90準拠）
+LONG_MAX			long_tに格納できる最大値（C90準拠）
+LONG_MIN			long_tに格納できる最小値（C90準拠）
+ULONG_MAX			ulong_tに格納できる最大値（C90準拠）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>FLOAT32_MIN			float32_tに格納できる最小の正規化された正の浮
+					動小数点数（オプション）
+FLOAT32_MAX			float32_tに格納できる表現可能な最大の有限浮動
+					小数点数（オプション）
+DOUBLE64_MIN		double64_tに格納できる最小の正規化された正の浮
+					動小数点数（オプション）
+DOUBLE64_MAX		double64_tに格納できる表現可能な最大の有限浮動
+					小数点数（オプション）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(3) 整数型のビット数</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>CHAR_BIT			char型のビット数（C90準拠）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(4) オブジェクト属性</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_NULL		0U		オブジェクト属性を指定しない</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(5) タイムアウト指定</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMO_POL		0		ポーリング
+TMO_FEVR	-1		永久待ち
+TMO_NBLK	-2		ノンブロッキング</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(6) アクセス許可パターン</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TACP_KERNEL		0U		カーネルドメインのみにアクセスを許可
+TACP_SHARED		~0U		すべての保護ドメインにアクセスを許可</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_toppers共通マクロ">1.4.2. TOPPERS共通マクロ</h4>
+<div class="paragraph">
+<p>(1) 整数定数を作るマクロ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>INT8_C(val)			int_least8_t型の定数を作るマクロ（C99準拠）
+UINT8_C(val)		uint_least8_t型の定数を作るマクロ（C99準拠）
+INT16_C(val)		int16_t型の定数を作るマクロ（C99準拠）
+UINT16_C(val)		uint16_t型の定数を作るマクロ（C99準拠）
+INT32_C(val)		int32_t型の定数を作るマクロ（C99準拠）
+UINT32_C(val)		uint32_t型の定数を作るマクロ（C99準拠）
+INT64_C(val)		int64_t型の定数を作るマクロ（オプション，C99準拠）
+UINT64_C(val)		uint64_t型の定数を作るマクロ（オプション，C99準拠）
+INT128_C(val)		int128_t型の定数を作るマクロ（オプション，C99準拠）
+UINT128_C(val)		uint128_t型の定数を作るマクロ（オプション，C99準拠）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>UINT_C(val)			uint_t型の定数を作るマクロ
+ULONG_C(val)		ulong_t型の定数を作るマクロ</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(2) 型に関する情報を取り出すためのマクロ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>offsetof(structure, field)	構造体structure中のフィールドfieldの
+							バイト位置を返すマクロ（C90準拠）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>alignof(type)				型typeのアラインメント単位を返すマクロ</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>ALIGN_TYPE(addr, type)		番地addrが型typeに対してアラインしてい
+							るかどうかを返すマクロ</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(3) assertマクロ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>assert(exp)			expが成立しているかを検査するマクロ（C90準拠）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(4) コンパイラの拡張機能のためのマクロ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>inline				インライン関数
+Inline				ファイルローカルなインライン関数
+asm					インラインアセンブラ
+Asm					インラインアセンブラ（最適化抑止）
+throw()				例外を発生しない関数
+NoReturn			リターンしない関数</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(5) エラーコード生成・分解マクロ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>ERCD(mercd, sercd)	メインエラーコードmercdとサブエラーコードsercdか
+					ら，エラーコードを生成するためのマクロ</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>MERCD(ercd)			エラーコードercdからメインエラーコードを抽出する
+					ためのマクロ
+SERCD(ercd)			エラーコードercdからサブエラーコードを抽出するた
+					めのマクロ</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(6) アクセス許可パターン生成マクロ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TACP(domid)			domidで指定される保護ドメインに属する処理単位の
+					みにアクセスを許可するアクセス許可パターン</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_カーネル共通定数">1.4.3. カーネル共通定数</h4>
+<div class="paragraph">
+<p>(1) オブジェクト属性</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_TPRI			0x01U	タスクの待ち行列をタスクの優先度順に</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(2) 保護ドメインID</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TDOM_SELF		0		自タスクの属する保護ドメイン
+TDOM_KERNEL		-1		カーネルドメイン
+TDOM_NONE		-2		無所属（保護ドメインに属さない）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(3) その他のカーネル共通定数</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TCLS_SELF		0		自タスクの属するクラス</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TPRC_NONE		0		割付けプロセッサの指定がない
+TPRC_INI		0		初期割付けプロセッサ</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TSK_SELF		0		自タスク指定
+TSK_NONE		0		該当するタスクがない</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TPRI_SELF		0		自タスクのベース優先度の指定
+TPRI_INI		0		タスクの起動時優先度の指定</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TIPM_ENAALL		0		割込み優先度マスク全解除</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_カーネル共通マクロ">1.4.4. カーネル共通マクロ</h4>
+<div class="paragraph">
+<p>(1) オブジェクト属性を作るマクロ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_DOM(domid)		domidで指定される保護ドメインに属する
+TA_CLS(clsid)		clsidで指定されるクラスに属する</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(2) サービスコールの呼出し方法を指定するマクロ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>SVC_CALL(svc)		svcで指定されるサービスコールを関数呼出しによっ
+					て呼び出すための名称</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_カーネルの機能毎の定数">1.4.5. カーネルの機能毎の定数</h4>
+<div class="paragraph">
+<p>(1) タスク管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_ACT			0x02U	タスクの生成時にタスクを起動する
+TA_RSTR			0x04U	生成するタスクを制約タスクとする
+TA_FPU					FPUレジスタをコンテキストに含める</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TTS_RUN			0x01U	実行状態
+TTS_RDY			0x02U	実行可能状態
+TTS_WAI			0x04U	待ち状態
+TTS_SUS			0x08U	強制待ち状態
+TTS_WAS			0x0cU	二重待ち状態
+TTS_DMT			0x10U	休止状態</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TTW_SLP			0x0001U	起床待ち
+TTW_DLY			0x0002U	時間経過待ち
+TTW_SEM			0x0004U	セマフォの資源獲得待ち
+TTW_FLG			0x0008U	イベントフラグ待ち
+TTW_SDTQ		0x0010U	データキューへの送信待ち
+TTW_RDTQ		0x0020U	データキューからの受信待ち
+TTW_SPDQ		0x0100U	優先度データキューへの送信待ち
+TTW_RPDQ		0x0200U	優先度データキューからの受信待ち
+TTW_MBX			0x0040U	メールボックスからの受信待ち
+TTW_MTX			0x0080U	ミューテックスのロック待ち状態
+TTW_SMBF		0x0400U	メッセージバッファへの送信待ち
+TTW_RMBF		0x0800U	メッセージバッファからの受信待ち
+TTW_MPF			0x2000U	固定長メモリブロックの獲得待ち</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TA_FPUの値は，ターゲット定義とする．</p>
+</div>
+<div class="paragraph">
+<p>(3) タスク例外処理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TTEX_ENA		0x01U	タスク例外処理許可状態
+TTEX_DIS		0x02U	タスク例外処理禁止状態</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(4) 同期・通信機能</p>
+</div>
+<div class="paragraph">
+<p>イベントフラグ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_WMUL			0x02U	複数のタスクが待つのを許す
+TA_CLR			0x04U	タスクの待ち解除時にイベントフラグをクリアする</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TWF_ORW			0x01U	イベントフラグのOR待ちモード
+TWF_ANDW		0x02U	イベントフラグのAND待ちモード</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メールボックス</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_MPRI			0x02U	メッセージキューをメッセージの優先度順にする</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>スピンロック</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TSPN_UNL		0x01U	取得されていない状態
+TSPN_LOC		0x02U	取得されている状態</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(6) 時間管理機能</p>
+</div>
+<div class="paragraph">
+<p>周期ハンドラ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_STA			0x02U	周期ハンドラの生成時に周期ハンドラを動作開始する
+TA_PHS			0x04U	周期ハンドラを生成した時刻を基準時刻とする</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TCYC_STP		0x01U	周期ハンドラが動作していない状態
+TCYC_STA		0x02U	周期ハンドラが動作している状態</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>アラームハンドラ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TALM_STP		0x01U	アラームハンドラが動作していない状態
+TALM_STA		0x02U	アラームハンドラが動作している状態</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>オーバランハンドラ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOVR_STP		0x01U	オーバランハンドラが動作していない状態
+TOVR_STA		0x02U	オーバランハンドラが動作している状態</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(8) メモリオブジェクト管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_NOWRITE		0x01U	書込みアクセス禁止
+TA_NOREAD		0x02U	読出しアクセス禁止
+TA_EXEC			0x04U	実行アクセス許可
+TA_MEMINI		0x08U	メモリの初期化を行う
+TA_MEMPRSV		0x10U	メモリの初期化を行わない
+TA_SDATA		0x20U	ショートデータ領域に配置
+TA_UNCACHE		0x40U	キャッシュ禁止
+TA_IODEV		0x80U	周辺デバイスの領域
+TA_WTHROUGH				ライトスルーキャッシュを用いる</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TPM_WRITE		0x01U	書込みアクセス権のチェック
+TPM_READ		0x02U	読出しアクセス権のチェック
+TPM_EXEC		0x04U	実行アクセス権のチェック</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TA_WTHROUGHの値は，ターゲット定義とする．</p>
+</div>
+<div class="paragraph">
+<p>(9) 割込み管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_ENAINT		0x01U	割込み要求禁止フラグをクリア
+TA_EDGE			0x02U	エッジトリガ
+TA_POSEDGE				ポジティブエッジトリガ
+TA_NEGEDGE				ネガティブエッジトリガ
+TA_BOTHEDGE				両エッジトリガ
+TA_LOWLEVEL				ローレベルトリガ
+TA_HIGHLEVEL			ハイレベルトリガ</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_NONKERNEL	0x02U	カーネル管理外の割込み</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TA_POSEDGE，TA_NEGEDGE，TA_BOTHEDGE，TA_LOWLEVEL，TA_HIGHLEVELの値は，
+ターゲット定義とする．</p>
+</div>
+<div class="paragraph">
+<p>(10) CPU例外管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TA_DIRECT				CPU例外ハンドラを直接呼び出す</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TA_DIRECTの値は，ターゲット定義とする．</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_カーネルの機能毎のマクロ">1.4.6. カーネルの機能毎のマクロ</h4>
+<div class="paragraph">
+<p>(1) タスク管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>COUNT_STK_T(sz)		サイズszのスタック領域を確保するために必要な
+					STK_T型の配列の要素数
+ROUND_STK_T(sz)		要素数COUNT_STK_T(sz)のSTK_T型の配列のサイズ（sz
+					を，STK_T型のサイズの倍数になるように大きい方に
+					丸めた値）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(4) 同期・通信機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TSZ_DTQMB(dtqcnt)	dtqcntで指定した数のデータを格納できるデータ
+					キュー管理領域のサイズ（バイト数）
+TCNT_DTQMB(dtqcnt)	dtqcntで指定した数のデータを格納できるデータ
+					キュー管理領域を確保するために必要なMB_T型の配
+					列の要素数</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TSZ_PDQMB(pdqcnt)	pdqcntで指定した数のデータを格納できる優先度デー
+					タキュー管理領域のサイズ（バイト数）
+TCNT_PDQMB(pdqcnt)	pdqcntで指定した数のデータを格納できる優先度デー
+					タキュー管理領域を確保するために必要なMB_T型の
+					配列の要素数</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TSZ_MBFMB(msgcnt, msgsz)	msgszで指定したサイズのメッセージを，
+							msgcntで指定した数だけ格納できるメッセー
+							ジバッファ管理領域のサイズ（バイト数）
+TCNT_MBFMB(msgcnt, msgsz)	msgszで指定したサイズのメッセージを，
+							msgcntで指定した数だけ格納できるメッセー
+							ジバッファ管理領域を確保するために必要
+							なMB_T型の配列の要素数</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(5) メモリプール管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>COUNT_MPF_T(blksz)	固定長メモリブロックのサイズがblkszの固定長メモ
+					リプール領域を確保するために，固定長メモリブロッ
+					ク1つあたりに必要なMPF_T型の配列の要素数を求め
+					るマクロ
+ROUND_MPF_T(blksz)	要素数COUNT_MPF_T(blksz)のMPF_T型の配列のサイズ
+					（blkszを，MPF_T型のサイズの倍数になるように大き
+					い方に丸めた値）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TSZ_MPFMB(blkcnt)	blkcntで指定した数の固定長メモリブロックを管理
+					することができる固定長メモリプール管理領域のサ
+					イズ（バイト数）
+TCNT_MPFMB(blkcnt)	blkcntで指定した数の固定長メモリブロックを管理
+					することができる固定長メモリプール管理領域を確
+					保するために必要なMB_T型の配列の要素数</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_構成マクロ">1.5. 構成マクロ</h3>
+<div class="sect3">
+<h4 id="_toppers共通構成マクロ">1.5.1. TOPPERS共通構成マクロ</h4>
+<div class="paragraph">
+<p>(1) 相対時間の範囲</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMAX_RELTIM		相対時間に指定できる最大値</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_カーネル共通構成マクロ">1.5.2. カーネル共通構成マクロ</h4>
+<div class="paragraph">
+<p>(1) サポートする機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOPPERS_SUPPORT_PROTECT			保護機能対応のカーネル
+TOPPERS_SUPPORT_MULTI_PRC		マルチプロセッサ対応のカーネル
+TOPPERS_SUPPORT_DYNAMIC_CRE		動的生成対応のカーネル</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(2) 優先度の範囲</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMIN_TPRI		タスク優先度の最小値（＝1）
+TMAX_TPRI		タスク優先度の最大値</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(3) プロセッサの数</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_PRCID		プロセッサの数</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(4) 特殊な役割を持ったプロセッサ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOPPERS_MASTER_PRCID		マスタプロセッサのID番号
+TOPPERS_SYSTIM_PRCID		システム時刻管理プロセッサのID番号</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(5) タイマ方式</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOPPERS_SYSTIM_LOCAL		ローカルタイマ方式の場合にマクロ定義
+TOPPERS_SYSTIM_GLOBAL		グローバルタイマ方式の場合にマクロ定義</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(6) バージョン情報</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TKERNEL_MAKER		カーネルのメーカコード（＝0x0118）
+TKERNEL_PRID		カーネルの識別番号
+TKERNEL_SPVER		カーネル仕様のバージョン番号
+TKERNEL_PRVER		カーネルのバージョン番号</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_カーネルの機能毎の構成マクロ">1.5.3. カーネルの機能毎の構成マクロ</h4>
+<div class="paragraph">
+<p>(1) タスク管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMAX_ACTCNT		タスクの起動要求キューイング数の最大値</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_TSKID		登録できるタスクの数（動的生成対応でないカーネルで
+				は，静的APIによって登録されたタスクの数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(2) タスク付属同期機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMAX_WUPCNT		タスクの起床要求キューイング数の最大値</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(3) タスク例外処理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TBIT_TEXPTN		タスク例外要因のビット数（TEXPTNの有効ビット数）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(4) 同期・通信機能</p>
+</div>
+<div class="paragraph">
+<p>セマフォ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMAX_MAXSEM		セマフォの最大資源数の最大値</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_SEMID		登録できるセマフォの数（動的生成対応でないカーネル
+				では，静的APIによって登録されたセマフォの数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>イベントフラグ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TBIT_FLGPTN		イベントフラグのビット数（FLGPTNの有効ビット数）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_FLGID		登録できるイベントフラグの数（動的生成対応でないカー
+				ネルでは，静的APIによって登録されたイベントフラグの
+				数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>データキュー</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_DTQID		登録できるデータキューの数（動的生成対応でないカー
+				ネルでは，静的APIによって登録されたデータキューの数
+				に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>優先度データキュー</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMIN_DPRI		データ優先度の最小値（＝1）
+TMAX_DPRI		データ優先度の最大値</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_PDQID		登録できる優先度データキューの数（動的生成対応でな
+				いカーネルでは，静的APIによって登録された優先度デー
+				タキューの数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メールボックス</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMIN_MPRI		メッセージ優先度の最小値（＝1）
+TMAX_MPRI		メッセージ優先度の最大値</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_MBXID		登録できるメールボックスの数（動的生成対応でないカー
+				ネルでは，静的APIによって登録されたメールボックスの
+				数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ミューテックス</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_MTXID		登録できるミューテックスの数（動的生成対応でないカー
+				ネルでは，静的APIによって登録されたミューテックスの
+				数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>メッセージバッファ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_MBFID		登録できるメッセージバッファの数（動的生成対応でな
+				いカーネルでは，静的APIによって登録されたメッセー
+				ジバッファの数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>スピンロック</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_SPNID		登録できるスピンロックの数（動的生成対応でないカー
+				ネルでは，静的APIによって登録されたミューテックスの
+				数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(5) メモリプール管理機能</p>
+</div>
+<div class="paragraph">
+<p>固定長メモリプール</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_MPFID		登録できる固定長メモリプールの数（動的生成対応でない
+				カーネルでは，静的APIによって登録された固定長メモリ
+				プールの数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(6) 時間管理機能</p>
+</div>
+<div class="paragraph">
+<p>システム時刻管理</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TIC_NUME	タイムティックの周期（単位はミリ秒）の分子
+TIC_DENO	タイムティックの周期（単位はミリ秒）の分母</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOPPERS_SUPPORT_GET_UTM		get_utmがサポートされている</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>周期ハンドラ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_CYCID		登録できる周期ハンドラの数（動的生成対応でないカー
+				ネルでは，静的APIによって登録された周期ハンドラの数
+				に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>アラームハンドラ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_ALMID		登録できるアラームハンドラの数（動的生成対応でない
+				カーネルでは，静的APIによって登録されたアラームハン
+				ドラの数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>オーバランハンドラ</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMAX_OVRTIM		プロセッサ時間に指定できる最大値</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOPPERS_SUPPORT_OVRHDR		オーバランハンドラ機能がサポートされて
+							いる</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(7) システム状態管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>なし</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(8) メモリオブジェクト管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOPPERS_SUPPORT_ATT_MOD		ATT_MOD／ATA_MODがサポートされている
+TOPPERS_SUPPORT_ATT_PMA		ATT_PMA／ATA_PMA／att_pmaがサポートさ
+							れている</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(9) 割込み管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMIN_INTPRI		割込み優先度の最小値（最高値）
+TMAX_INTPRI		割込み優先度の最大値（最低値，＝-1）</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TMIN_ISRPRI		割込みサービスルーチン優先度の最小値（＝1）
+TMAX_ISRPRI		割込みサービスルーチン優先度の最大値</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TOPPERS_SUPPORT_DIS_INT		dis_intがサポートされている
+TOPPERS_SUPPORT_ENA_INT		ena_intがサポートされている</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(10) CPU例外管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>なし</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(11) 拡張サービスコール管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TNUM_FNCD		登録できる拡張サービスコールの数（動的生成対応でな
+				いカーネルでは，静的APIによって登録された拡張サービ
+				スコールの数に一致）</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(12) システム構成管理機能</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>なし</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_エラーコード一覧">1.6. エラーコード一覧</h3>
+<div class="paragraph">
+<p>(1) メインエラーコード</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>E_SYS		-5		システムエラー
+E_NOSPT		-9		未サポート機能
+E_RSFN		-10		予約機能コード
+E_RSATR		-11		予約属性
+E_PAR		-17		パラメータエラー
+E_ID		-18		不正ID番号
+E_CTX		-25		コンテキストエラー
+E_MACV		-26		メモリアクセス違反
+E_OACV		-27		オブジェクトアクセス違反
+E_ILUSE		-28		サービスコール不正使用
+E_NOMEM		-33		メモリ不足
+E_NOID		-34		ID番号不足
+E_NORES		-35		資源不足
+E_OBJ		-41		オブジェクト状態エラー
+E_NOEXS		-42		オブジェクト未登録
+E_QOVR		-43		キューイングオーバフロー
+E_RLWAI		-49		待ち禁止状態または待ち状態の強制解除
+E_TMOUT		-50		ポーリング失敗またはタイムアウト
+E_DLT		-51		待ちオブジェクトの削除または再初期化
+E_CLS		-52		待ちオブジェクトの状態変化
+E_WBLK		-57		ノンブロッキング受付け
+E_BOVR		-58		バッファオーバフロー</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_機能コード一覧_ngki4036">1.7. 機能コード一覧【NGKI4036】</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x01</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x05</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">act_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iact_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">can_act</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ext_tsk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x09</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ter_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">chg_pri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_pri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_inf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x0d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">slp_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tslp_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wup_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iwup_tsk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">can_wup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rel_wai</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">irel_wai</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dis_wai</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">idis_wai</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ena_wai</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iena_wai</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sus_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rsm_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dly_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x1d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ras_tex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iras_tex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dis_tex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ena_tex</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sns_tex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_tex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sig_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">isig_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wai_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pol_sem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x29</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">twai_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x2d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">set_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iset_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">clr_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wai_flg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pol_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">twai_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x35</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">snd_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">psnd_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ipsnd_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsnd_dtq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x39</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fsnd_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ifsnd_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rcv_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prcv_dtq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x3d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">trcv_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x41</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">snd_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">psnd_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ipsnd_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsnd_pdq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rcv_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prcv_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">trcv_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x49</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">snd_mbx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rcv_mbx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prcv_mbx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">trcv_mbx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x4d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">loc_mtx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ploc_mtx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tloc_mtx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unl_mtx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x51</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">snd_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">psnd_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsnd_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rcv_mbf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x55</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prcv_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">trcv_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x59</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pget_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tget_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rel_mpf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x5d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_tim</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_utm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_ovr</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x61</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sta_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">stp_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x65</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sta_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ista_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">stp_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">istp_alm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x69</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sta_ovr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ista_ovr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">stp_ovr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">istp_ovr</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x6d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_sys</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_sys</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rot_rdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">irot_rdq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x71</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_did</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_tid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iget_tid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x75</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">loc_cpu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iloc_cpu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unl_cpu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iunl_cpu</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x79</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dis_dsp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ena_dsp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sns_ctx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sns_loc</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x7d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sns_dsp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sns_dpn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sns_ker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ext_ker</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x81</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">att_mem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">det_mem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_mem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prb_mem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x85</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_mem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">att_pma</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x89</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cfg_int</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dis_int</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ena_int</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_int</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x8d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">chg_ipm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_ipm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x91</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsns_dpn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsns_xpn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x95</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_cfg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_ver</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x99</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x9d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xa1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_dtq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xa5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_mbx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_mtx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_mbf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xa9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xb1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_dtq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xb5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_mbx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_mtx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_mbf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xb9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_isr</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xbd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xc1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_dtq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xc5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_mbx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_mtx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_mbf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xc9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_isr</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xcd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xd1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_dtq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xd5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_mbx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_mtx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_mbf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xd9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_isr</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xdd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xe1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_dtq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xe5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_mtx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_mbf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xe9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_isr</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xf1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_tex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_ovr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_inh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_exc</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xf5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_svc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xf9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0xfd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x101</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mact_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">imact_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mig_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x105</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">msta_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">msta_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">imsta_alm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x109</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mrot_rdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">imrot_rdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_pid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iget_pid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x10d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x111</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">loc_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iloc_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">try_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">itry_spn</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x115</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unl_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iunl_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x119</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-0x11d</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">予約</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>【μITRON4.0仕様との関係】</p>
+</div>
+<div class="paragraph">
+<p>サービスコールの機能コードを割り当てなおした．</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_カーネルオブジェクトに対するアクセスの種別">1.8. カーネルオブジェクトに対するアクセスの種別</h3>
+<table class="tableblock frame-topbot grid-all spread">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">オブジェクトの種類</th>
+<th class="tableblock halign-left valign-top">通常操作1</th>
+<th class="tableblock halign-left valign-top">通常操作2</th>
+<th class="tableblock halign-left valign-top">管理操作</th>
+<th class="tableblock halign-left valign-top">参照操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">メモリオブジェクト</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">書込み</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">読出し</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">det_mem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_mem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">実行</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_mem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prb_mem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="10"><p class="tableblock">タスク</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">act_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ter_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_pri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mact_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">chg_pri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_tsk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">can_act</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rel_wai</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_tex</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_tex</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mig_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sus_tsk</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_ovr</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wup_tsk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rsm_tsk</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prb_mem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">can_wup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dis_wai</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ena_wai</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ras_tex</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sta_ovr</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">stp_ovr</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">セマフォ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sig_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wai_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_sem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pol_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_sem</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">twai_sem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_sem</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">イベントフラグ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">set_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wai_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_flg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">clr_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pol_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_flg</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">twai_flg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_flg</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">データキュー</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">snd_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rcv_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_dtq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">psnd_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prcv_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_dtq</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsnd_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">trcv_dtq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_dtq</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fsnd_dtq</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">優先度データキュー</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">snd_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rcv_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_pdq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">psnd_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prcv_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_pdq</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsnd_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">trcv_pdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_pdq</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">メッセージバッファ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">snd_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rcv_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_mbf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">psnd_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prcv_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_mbf</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsnd_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">trcv_mbf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_mbf</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">ミューテックス</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">loc_mtx</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_mtx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_mtx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ploc_mtx</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_mtx</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tloc_mtx</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_mtx</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unl_mtx</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">スピンロック</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">loc_spn</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_spn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_spn</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">try_spn</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_spn</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unl_spn</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">固定長メモリプール</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rel_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_mpf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_mpf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pget_mpf</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ini_mpf</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tget_mpf</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_mpf</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">周期ハンドラ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sta_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">stp_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_cyc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_cyc</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">msta_cyc</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_cyc</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">アラームハンドラ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sta_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">stp_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_alm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_alm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">msta_alm</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_alm</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">割込みサービスルーチン</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">del_isr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_isr</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sac_isr</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="8"><p class="tableblock">システム状態</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rot_rdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">loc_cpu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acre_yyy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_tim</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mrot_rdq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unl_cpu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">att_mem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get_ipm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dis_dsp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dis_int</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">att_pma</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_sys</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ena_dsp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ena_int</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cfg_int</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_int</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">chg_ipm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_inh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_cfg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_exc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ref_ver</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_svc</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">def_ovr</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>すべての保護ドメインから呼び出すことができるサービスコール：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>自タスクへの操作（ext_tsk，get_inf，slp_tsk，tslp_tsk，dly_tsk，dis_tex，ena_tex）</p>
+</li>
+<li>
+<p>タスク例外状態参照（sns_tex）</p>
+</li>
+<li>
+<p>性能評価用システム時刻の参照（get_utm）</p>
+</li>
+<li>
+<p>システム状態参照（get_tid，get_did，get_pid，sns_ctx，sns_loc，sns_dsp，sns_dpn，sns_ker）</p>
+</li>
+<li>
+<p>CPU例外発生時の状態参照（xsns_dpn，xsns_xpn）</p>
+</li>
+<li>
+<p>拡張サービスコールの呼出し（cal_svc）</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>カーネルドメインのみから呼び出すことができるサービスコール：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>システム状態のアクセス許可ベクタの設定（sac_sys）</p>
+</li>
+<li>
+<p>カーネルの終了（ext_ker）</p>
+</li>
+<li>
+<p>非タスクコンテキスト専用のサービスコール</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>【補足説明】</p>
+</div>
+<div class="paragraph">
+<p>xsns_dpnとxsns_xpnは，エラーコードを返さないために，すべての保護ドメイ
+ンから呼び出すことができるサービスコールとしているが，タスクコンテキス
+トから呼び出した場合には必ずtrueが返ることとしており，実質的にはカーネ
+ルドメインのみから呼び出すことができる．</p>
+</div>
+<div class="paragraph">
+<p>【μITRON4.0/PX仕様との関係】</p>
+</div>
+<div class="paragraph">
+<p>get_priは，μITRON4.0/PX仕様ではタスクに対する通常操作1としていたのを，
+タスクに対する参照操作に変更した．また，get_ipm（μITRON4.0/PX仕様では
+get_ixx）をシステム状態に対する通常操作2から参照操作に，sac_sysをシステ
+ム状態に対する管理操作からカーネルドメインのみから呼び出すことができる
+サービスコールに変更した．システム時刻に対するアクセス許可ベクタは廃止
+し，get_timはシステム状態に対する参照操作とした．</p>
+</div>
+<div class="paragraph">
+<p>【仕様変更の経緯】</p>
+</div>
+<div class="paragraph">
+<p>この仕様のRelease 1.5以前では，unl_mtxは，アクセス許可ベクタによるアク
+セス保護を行わないサービスコールとしていた．これは，ミューテックスをロッ
+クしたタスク以外がunl_mtxを呼び出すとE_ILUSEエラーとなるため，実質的に
+は対象ミューテックスの通常操作1としてアクセス保護されているとみなすこと
+ができると考えたためである．しかし，タスクが拡張サービスコールの中で
+ミューテックスをロックした場合，アクセス許可ベクタではアクセスが許可さ
+れていないミューテックスをロックすることができる．このようなミューテッ
+クスのロック解除は，タスクから直接unl_mtxを呼んで行うのではなく，拡張サー
+ビスコールの中で行うべきと考えられる．そこで，unl_mtxを，対象ミューテッ
+クスの通常操作1としてアクセス保護する仕様に変更した．なお，HRP2カーネル
+Release 2.1以前のバージョンは，古い仕様に従って実装されている．</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ターゲット定義事項一覧">1.9. ターゲット定義事項一覧</h3>
+<div class="paragraph">
+<p>・割込み優先度の段階数［NGKI0256］</p>
+</div>
+<div class="paragraph">
+<p>・割込み番号の付与方法［NGKI0272］</p>
+</div>
+<div class="paragraph">
+<p>・割込みハンドラ番号の付与方法［NGKI0273］</p>
+</div>
+<div class="paragraph">
+<p>・割込み番号に対応しない割込みハンドラ番号や，割込みハンドラ番号に対応
+　しない割込み番号を設けるか［NGKI0276］</p>
+</div>
+<div class="paragraph">
+<p>・受け付けた割込み要求に対して，割込みサービスルーチンも割込みハンドラ
+　も登録していない場合の振舞い［NGKI0249］</p>
+</div>
+<div class="paragraph">
+<p>・割込み要求禁止フラグがサポートされているか［NGKI0260］［NGKI0261］</p>
+</div>
+<div class="paragraph">
+<p>・割込み要求禁止フラグの振舞いを仕様と異なるものとするか［NGKI0261］</p>
+</div>
+<div class="paragraph">
+<p>・割込み要求ラインのトリガモードの設定がサポートされているか［NGKI0267］</p>
+</div>
+<div class="paragraph">
+<p>・割込み要求ラインをエッジトリガに設定する場合に，ポジティブエッジトリ
+　ガかネガティブエッジトリガか両エッジトリガかを設定できるか［NGKI0265］</p>
+</div>
+<div class="paragraph">
+<p>・割込み要求ラインをレベルトリガに設定する場合に，ローレベルトリガかハ
+　イレベルトリガかを設定できるか［NGKI0266］</p>
+</div>
+<div class="paragraph">
+<p>・あるプロセッサで割込み要求禁止フラグを動的にセット／クリアしても，他
+　のプロセッサに対しては割込みがマスク／マスク解除されないものとするか
+　〔M〕［NGKI0281］</p>
+</div>
+<div class="paragraph">
+<p>・TMIN_INTPRIを固定するか設定できるようにするかと，設定できるようにする
+　場合の設定方法［NGKI0288］</p>
+</div>
+<div class="paragraph">
+<p>・NMI以外にカーネル管理外の割込みを設けるか（設けられるようにするか）
+　［NGKI0289］</p>
+</div>
+<div class="paragraph">
+<p>・カーネル管理外の割込みハンドラが実行開始される時のシステム状態とコン
+　テキスト，割込みハンドラの終了時に行われる処理，割込みハンドラの記述
+　方法［NGKI0292］</p>
+</div>
+<div class="paragraph">
+<p>・カーネル管理外の割込みの設定方法として，3つの方法のいずれを採用するか
+　［NGKI0295］</p>
+</div>
+<div class="paragraph">
+<p>・カーネル管理外とされた割込みに対して，カーネルのAPIにより割込みハンド
+　ラを登録できるかと，割込み要求ラインの属性を設定できるか［NGKI0297］</p>
+</div>
+<div class="paragraph">
+<p>・CPU例外ハンドラ番号の付与方法［NGKI0306］</p>
+</div>
+<div class="paragraph">
+<p>・発生したCPU例外に対して，CPU例外ハンドラを登録していない場合の振舞い
+　［NGKI0314］</p>
+</div>
+<div class="paragraph">
+<p>・メモリオブジェクトの先頭番地とサイズに対する制約〔P〕［NGKI0070］
+　［NGKI2774］</p>
+</div>
+<div class="paragraph">
+<p>・コンパイラが出力しないセクションの中で，どれを標準のセクションと扱う
+　か〔P〕［NGKI0113］</p>
+</div>
+<div class="paragraph">
+<p>・保護ドメイン毎の標準セクションのセクション名を，標準のセクション名と
+　保護ドメイン名を"_"でつないだものとする仕様を変更するか〔P〕［NGKI0116］</p>
+</div>
+<div class="paragraph">
+<p>・タスクのユーザスタック領域はそのタスク（とカーネルドメインに属する処
+　理単位）のみがアクセスできるという仕様を変更するか〔P〕［NGKI0074］</p>
+</div>
+<div class="paragraph">
+<p>・メモリオブジェクトに対して，通常のメモリアクセスにより，許可されてい
+　ない書込みアクセスまたは読出しアクセス（実行アクセスを含む）を行おう
+　とした場合に，どのCPU例外ハンドラが起動されるか〔P〕［NGKI0411］</p>
+</div>
+<div class="paragraph">
+<p>・メモリオブジェクトに対して，サービスコールを通じて，許可されていない
+　書込みアクセスまたは読出しアクセスを行おうとした場合に，サービスコー
+　ルからE_MACVエラーが返るか，メモリアクセス違反ハンドラが起動されるか
+　〔P〕［NGKI0413］</p>
+</div>
+<div class="paragraph">
+<p>・メモリアクセス違反ハンドラで，アクセス違反を発生させたアクセスに関す
+　る情報（アクセスした番地，アクセスの種別，アクセスした命令の番地など）
+　を参照する方法〔P〕［NGKI0414］</p>
+</div>
+<div class="paragraph">
+<p>・メモリオブジェクトの書込みアクセスと読出しアクセス（実行アクセスを含
+　む）に対して設定できるアクセス許可パターンに対する制限〔P〕［NGKI0417］</p>
+</div>
+<div class="paragraph">
+<p>・1つの保護ドメインに登録できるメモリオブジェクトの数に対する制限〔P〕
+　［NGKI0423］</p>
+</div>
+<div class="paragraph">
+<p>・ユーザスタック領域に対して実行アクセスを行えるか〔P〕［NGKI0440］</p>
+</div>
+<div class="paragraph">
+<p>・タスクのユーザスタック領域を，そのタスクが属する保護ドメイン全体から
+　アクセスできるものとするか〔P〕［NGKI0441］</p>
+</div>
+<div class="paragraph">
+<p>・使用できるクラスのID番号とその属性〔M〕［NGKI0107］</p>
+</div>
+<div class="paragraph">
+<p>・どのプロセッサをマスタプロセッサとするか〔M〕［NGKI0101］</p>
+</div>
+<div class="paragraph">
+<p>・ローカルタイマ方式とグローバルタイマ方式のどちらの方式を用いることが
+　できるか〔M〕［NGKI0108］</p>
+</div>
+<div class="paragraph">
+<p>・グローバルタイマ方式の場合に，どのプロセッサをシステム時刻管理プロセッ
+　サとするか〔M〕［NGKI0111］</p>
+</div>
+<div class="paragraph">
+<p>・int8_t，uint8_t，int64_t，uint64_t，int128_t，uint128_t，float32_t，
+　double64_tが使用できるか［NGKI0488］［NGKI0490］</p>
+</div>
+<div class="paragraph">
+<p>・ターゲット定義のタスク属性［NGKI1016］</p>
+</div>
+<div class="paragraph">
+<p>・タスクが用いるスタック領域のサイズの最小値［NGKI1042］</p>
+</div>
+<div class="paragraph">
+<p>・タスクのシステムスタック領域のサイズの最小値〔P〕［NGKI1044］</p>
+</div>
+<div class="paragraph">
+<p>・タスクが用いるスタック領域の先頭番地とサイズに対する制約［NGKI1050］
+　［NGKI1056］</p>
+</div>
+<div class="paragraph">
+<p>・ユーザスタックのスタック領域（ユーザスタック領域）をアプリケーション
+　で確保する方法〔P〕［NGKI1059］</p>
+</div>
+<div class="paragraph">
+<p>・タスクのシステムスタック領域の先頭番地とサイズに対する制約〔P〕
+　［NGKI1062］［NGKI1065］［NGKI1070］</p>
+</div>
+<div class="paragraph">
+<p>・データキュー管理領域の先頭番地に対する制約［NGKI1687］</p>
+</div>
+<div class="paragraph">
+<p>・優先度データキュー管理領域の先頭番地に対する制約［NGKI1824］</p>
+</div>
+<div class="paragraph">
+<p>・メッセージバッファ管理領域の先頭番地とサイズに対する制約［NGKI3319］
+　［NGKI3324］</p>
+</div>
+<div class="paragraph">
+<p>・生成できるスピンロックの数の上限〔M〕［NGKI2142］</p>
+</div>
+<div class="paragraph">
+<p>・スピンロックに対して，複数のプロセッサがロックの取得を待っている時に，
+　どのプロセッサが最初にロックを取得できるか〔M〕［NGKI2183］</p>
+</div>
+<div class="paragraph">
+<p>・固定長メモリプール領域の先頭番地に対する制約［NGKI2249］</p>
+</div>
+<div class="paragraph">
+<p>・固定長メモリプール管理領域の先頭番地に対する制約［NGKI2256］</p>
+</div>
+<div class="paragraph">
+<p>・タイムティックの周期［NGKI2335］</p>
+</div>
+<div class="paragraph">
+<p>・マルチプロセッサ対応カーネルにおける性能評価用システム時刻の扱い〔M〕
+　［NGKI2346］</p>
+</div>
+<div class="paragraph">
+<p>・get_utmがサポートされているか［NGKI2360］</p>
+</div>
+<div class="paragraph">
+<p>・オーバランハンドラ機能がサポートされているか［NGKI2598］</p>
+</div>
+<div class="paragraph">
+<p>・オーバランハンドラ機能のプロセッサ時間に指定できる値の上限［NGKI2594］</p>
+</div>
+<div class="paragraph">
+<p>・ターゲット定義のメモリリージョン属性〔P〕</p>
+</div>
+<div class="paragraph">
+<p>・メモリリージョンの先頭番地とサイズに対する制約〔P〕［NGKI2768］</p>
+</div>
+<div class="paragraph">
+<p>・メモリオブジェクトに対するTA_NOWRITE属性，TA_NOREAD属性，TA_EXEC属性
+　の内，どのような場合にどの属性の指定が無視されるか〔P〕［NGKI2782］</p>
+</div>
+<div class="paragraph">
+<p>・ショートデータ領域がサポートされておらず，TA_SDATA属性が無視されるか
+　〔P〕［NGKI2789］</p>
+</div>
+<div class="paragraph">
+<p>・TA_NOWRITEを指定した場合に，TA_SDATAが無視されるか〔P〕［NGKI2790］</p>
+</div>
+<div class="paragraph">
+<p>・TA_UNCACHE属性やTA_IODEV属性を指定しても意味がなく，これらの属性が無
+　視されるか〔P〕［NGKI2792］</p>
+</div>
+<div class="paragraph">
+<p>・キャッシュ禁止にできないメモリオブジェクトと周辺デバイスの領域として
+　扱うことができないメモリオブジェクト〔P〕［NGKI2793］</p>
+</div>
+<div class="paragraph">
+<p>・ターゲット定義のメモリオブジェクト属性〔P〕［NGKI2794］</p>
+</div>
+<div class="paragraph">
+<p>・ATA_SECにより登録できるセクションが属する保護ドメインや登録できる数
+　に対する制限〔P〕［NGKI2831］</p>
+</div>
+<div class="paragraph">
+<p>・ATT_MOD／ATA_MODがサポートされているか〔P〕［NGKI2859］</p>
+</div>
+<div class="paragraph">
+<p>・ATT_MOD／ATA_MODにより登録されるセクション毎のメモリオブジェクトに設
+　定されるメモリオブジェクト属性〔P〕［NGKI2850］</p>
+</div>
+<div class="paragraph">
+<p>・クラスの囲みの中に記述されたATT_MOD／ATA_MODにおいて，クラスの標準メ
+　モリリージョンが定義されている場合でも，共通の標準メモリリージョンに
+　配置されるセクション〔PM〕［NGKI3271］</p>
+</div>
+<div class="paragraph">
+<p>・ATA_MODにより登録できるオブジェクトモジュールが属する保護ドメインや登
+　録できる数に対する制限〔P〕［NGKI2857］</p>
+</div>
+<div class="paragraph">
+<p>・ATT_MEM／ATA_MEMにより登録できるメモリオブジェクトが属する保護ドメイ
+　ンや登録できる数に対する制限〔P〕［NGKI2878］</p>
+</div>
+<div class="paragraph">
+<p>・ATT_MEM／ATA_MEM／att_memにより登録するメモリ領域の先頭番地とサイズに
+　対する制約〔P〕［NGKI2880］</p>
+</div>
+<div class="paragraph">
+<p>・ATT_PMA／ATA_PMA／att_pmaがサポートされているか〔P〕［NGKI2903］
+　［HRPS0156］</p>
+</div>
+<div class="paragraph">
+<p>・ATT_PMA／ATA_PMAにより登録できるメモリオブジェクトが属する保護ドメイ
+　ンや登録できる数に対する制限〔P〕［NGKI2898］</p>
+</div>
+<div class="paragraph">
+<p>・ATT_PMA／ATA_PMA／att_pmaにより登録するメモリ領域の先頭番地とサイズ，
+　物理アドレス空間における先頭番地に対する制約〔P〕［NGKI2900］</p>
+</div>
+<div class="paragraph">
+<p>・ターゲット定義の割込み要求ライン属性［NGKI2945］</p>
+</div>
+<div class="paragraph">
+<p>・割込みハンドラ属性にTA_NONKERNELを指定できるか［NGKI2957］</p>
+</div>
+<div class="paragraph">
+<p>・その他のターゲット定義の割込みハンドラ属性［NGKI2959］</p>
+</div>
+<div class="paragraph">
+<p>・cfg_intにおいて，複数の割込み要求ラインの割込み優先度が連動して設定さ
+　れるか〔D〕［NGKI2980］</p>
+</div>
+<div class="paragraph">
+<p>・CFG_INT／cfg_intで，カーネル管理外の割込み要求ラインに対しても属性を
+　設定できるか［NGKI2982］</p>
+</div>
+<div class="paragraph">
+<p>・CFG_INT／cfg_intで，各割込み要求ラインに対して設定できる割込み要求ラ
+　イン属性／割込み優先度に対する制限［NGKI2986］</p>
+</div>
+<div class="paragraph">
+<p>・割込みサービスルーチンが属することができるクラスに対する制限〔M〕
+　［NGKI3018］</p>
+</div>
+<div class="paragraph">
+<p>・CRE_ISR／ATT_ISRにおいて，isrが不正である場合にE_PARエラーが検出され
+　るか［NGKI3020］</p>
+</div>
+<div class="paragraph">
+<p>・DEF_INH／def_inhで，カーネル管理外の割込みに対しても割込みハンドラを
+　定義できるか［NGKI3064］</p>
+</div>
+<div class="paragraph">
+<p>・カーネル管理外に固定されている割込みハンドラがあるか［NGKI3067］</p>
+</div>
+<div class="paragraph">
+<p>・カーネル管理に固定されている割込みハンドラがあるか［NGKI3068］</p>
+</div>
+<div class="paragraph">
+<p>・割込みハンドラが属することができるクラスに対する制限〔M〕［NGKI3074］</p>
+</div>
+<div class="paragraph">
+<p>・def_inhで，静的APIで定義された割込みハンドラの定義を解除できるか〔D〕
+　［NGKI3077］</p>
+</div>
+<div class="paragraph">
+<p>・DEF_INH／def_inhで割込みハンドラを定義（または定義解除）できない割込
+　みハンドラ番号［NGKI3078］</p>
+</div>
+<div class="paragraph">
+<p>・def_inhを呼び出したタスクが割り付けられているプロセッサから定義（また
+　は定義解除）できない割込みハンドラ〔M〕［NGKI3079］</p>
+</div>
+<div class="paragraph">
+<p>・DEF_INHにおいて，inthdrが不正である場合にE_PARエラーが検出されるか
+　［NGKI3080］</p>
+</div>
+<div class="paragraph">
+<p>・dis_intがサポートされているか［NGKI3091］</p>
+</div>
+<div class="paragraph">
+<p>・dis_intにより，どのような場合に割込み要求ラインの割込み要求禁止フラグ
+　をセットできないか［NGKI3087］</p>
+</div>
+<div class="paragraph">
+<p>・dis_intにおいて，割込み要求禁止フラグの振舞いが，この仕様の規定と異な
+　るか［NGKI3089］</p>
+</div>
+<div class="paragraph">
+<p>・ena_intがサポートされているか［NGKI3104］</p>
+</div>
+<div class="paragraph">
+<p>・ena_intにより，どのような場合に割込み要求ラインの割込み要求禁止フラグ
+　をクリアできないか［NGKI3100］</p>
+</div>
+<div class="paragraph">
+<p>・ena_intにおいて，割込み要求禁止フラグの振舞いが，この仕様の規定と異な
+　るか［NGKI3102］</p>
+</div>
+<div class="paragraph">
+<p>・chg_ipmにより，割込み優先度マスクをTMIN_INTPRIよりも小さい値に変更で
+　きるか［NGKI3114］</p>
+</div>
+<div class="paragraph">
+<p>・ターゲット定義のCPU例外ハンドラ属性［NGKI3123］</p>
+</div>
+<div class="paragraph">
+<p>・def_excで，静的APIで定義されたCPU例外ハンドラの定義を解除できるか〔D〕
+　［NGKI3148］</p>
+</div>
+<div class="paragraph">
+<p>・DEF_EXCにおいて，exchdrが不正である場合にE_PARエラーが検出されるか
+　［NGKI3149］</p>
+</div>
+<div class="paragraph">
+<p>・非タスクコンテキスト用スタック領域のサイズの最小値［NGKI3254］</p>
+</div>
+<div class="paragraph">
+<p>・非タスクコンテキスト用スタック領域の先頭番地とサイズに対する制約
+　［NGKI3220］［NGKI3222］</p>
+</div>
+<div class="paragraph">
+<p>・DEF_ICSにより非タスクコンテキスト用スタック領域を設定しない場合の，非
+　タスクコンテキスト用スタック領域のデフォルトのサイズ［NGKI3224］</p>
+</div>
+<div class="paragraph">
+<p>・共有スタック領域のサイズの最小値［NGKI3255］</p>
+</div>
+<div class="paragraph">
+<p>・共有スタック領域の先頭番地とサイズに対する制約［NGKI3234］［NGKI3236］</p>
+</div>
+<div class="paragraph">
+<p>・ATT_INIにおいて，inirtnが不正である場合にE_PARエラーが検出されるか
+　［NGKI3246］</p>
+</div>
+<div class="paragraph">
+<p>・ATT_TERにおいて，terrtnが不正である場合にE_PARエラーが検出されるか
+　［NGKI3253］</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_省略名の元になった英語">1.10. 省略名の元になった英語</h3>
+<div class="sect3">
+<h4 id="_サービスコールと静的apiの名称の中のxxxの元になった英語">1.10.1. サービスコールと静的APIの名称の中のxxxの元になった英語</h4>
+<div class="literalblock">
+<div class="content">
+<pre>xxx		元になった英語
+----------------------
+act		activate
+aid		automatically assigned ID
+ata		attach with access control vector
+att		attach
+cal		call
+can		cancel
+cfg		configure
+chg		change
+clr		clear
+cre		create
+def		define
+del		delete
+det		detach
+dis		disable
+dly		delay
+ena		enable
+epr		execution priority
+ext		exit
+get		get
+ini		initialize
+lmt		limit
+lnk		link
+loc		lock
+mig		migrate
+pol		poll
+prb		probe
+ras		raise
+rcv		receive
+ref		reference
+rel		release
+rot		rotate
+rsm		resume
+sac		set access control vector
+set		set
+sig		signal
+slp		sleep
+snd		send
+sns		sense
+sta		start
+stp		stop
+sus		suspend
+ter		terminate
+try		try
+unl		unlock
+wai		wait
+wup		wake up</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_サービスコールと静的apiの名称の中のyyy_の元になった英語">1.10.2. サービスコールと静的APIの名称の中のyyy の元になった英語</h4>
+<div class="literalblock">
+<div class="content">
+<pre>yyy		元になった英語
+----------------------
+act		activation
+alm		alarm handler
+cfg		configuration
+cpu		CPU
+ctx		context
+cyc		cyclic handler
+did		domain ID
+dom		domain
+dpn		dispatch pending
+dsp		dispatch
+dtq		data queue
+exc		exception
+flg		eventflag
+ics		interrupt context stack
+inf		information
+inh		interrupt handler
+ini		initilization
+int		interrupt
+ipm		interrupt priority mask
+isr		interrupt service routine
+ker		kernel
+loc		lock
+mbf		message buffer
+mbx		mailbox
+mpf		fixed-sized memory pool
+mem		memory
+mod		module
+mtx		mutex
+ovr		overrun handler
+pdq		priority data queue
+pid		processor ID
+pma		physical memory area
+pri		priority
+rdq		ready queue
+reg		region
+sec		section
+sem		semaphore
+srg		standard memory region
+spn		spin lock
+stk		stack
+sys		system
+svc		service call
+ter		termination
+tex		task exception
+tid		task ID
+tim		time
+tsk		task
+utm		time in micro second
+ver		version
+wai		wait
+wup		wake up
+xpn		exception pending</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_サービスコールの名称の中のzの元になった英語">1.10.3. サービスコールの名称の中のzの元になった英語</h4>
+<div class="literalblock">
+<div class="content">
+<pre>z		元になった英語
+----------------------
+a		automatic ID assignment
+f		force
+i		interrupt
+m		multiprocessor
+p		poll
+t		timeout
+x		exception</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_バージョン履歴">1.11. バージョン履歴</h3>
+<div class="literalblock">
+<div class="content">
+<pre>2008年11月19日	Release 1.0.0		最初のリリース
+2009年5月8日	Release 1.1.0		FMPカーネルに関する記述が完成
+2010年5月10日	Release 1.2.0
+2011年5月5日	Release 1.3.0		HRP2カーネルに関する記述が完成
+2012年5月16日	Release 1.4.0		SSPカーネルに関する記述が完成
+2012年12月19日	Release 1.5.0		HRP2カーネルの仕様変更を反映
+2014年1月16日	Release 1.6.0
+2014年11月17日	Release 1.7.0
+2015年5月30日	Release 1.7.1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>以上</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2016-07-20 01:21:51 UTC
+</div>
+</div>
+</body>
+</html>
